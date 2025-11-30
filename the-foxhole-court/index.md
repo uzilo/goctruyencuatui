@@ -25,4 +25,25 @@ Bạn nghĩ thể thao học đường là thanh xuân vườn trường tươi 
 
 Nhưng nguy hiểm nhất không phải là kẻ thù trên sân cỏ, mà là **Andrew Minyard** - Thủ môn thiên tài nhưng tâm lý vặn vẹo, kẻ nắm giữ mạng sống của Neil trong tay.
 
-Một bản hợp đồng tử thần. Một quá
+Một bản hợp đồng tử thần. Một quá khứ đẫm máu đang đuổi sát nút. *Liệu Neil có sống sót qua mùa giải này, hay sẽ chết dí trong hang Cáo?*
+
+## 📑 Mục Lục
+
+* **[Chương 1: Khói Thuốc & Hợp Đồng Tử Thần](./chap-01)** ✅
+
+* Chương 2: (Sắp ra mắt) 🔒
+* Chương 3: (Đang lết...) 🔒
+* Chương 4 🔒
+* Chương 5
+* Chương 6
+* Chương 7
+* Chương 8
+* Chương 9
+* Chương 10
+* Chương 11
+* Chương 12
+* Chương 13
+* Chương 14: Kết thúc
+
+---
+*Cập nhật lần cuối: 30/11/2025*
