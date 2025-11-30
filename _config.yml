@@ -1,19 +1,19 @@
 # ------------------------------------
-# THÔNG TIN CƠ BẢN (Sửa thoải mái)
+# CẤU HÌNH CHO REPO: goctruyencuatui
 # ------------------------------------
 title: Góc Truyện Của Tui
 email: thanhho1356@gmail.com
-description: Một trang web tui up mấy thứ linh tinh về truyện
-
-# QUAN TRỌNG: Link web (Không sửa lung tung nha)
+description: Nơi lưu trữ những câu chuyện hay ho
+# ------------------------------------
+# QUAN TRỌNG: Sửa đúng 2 dòng này
+# ------------------------------------
 url: "https://trieulm-2.github.io"
-baseurl: "/goctruyencuatui"
+baseurl: "/goctruyencuatui"        <--- Nhớ phải là tên repo mới nha!
 
-# Múi giờ (Ông ở Úc hả? Nếu ở VN thì sửa thành Asia/Ho_Chi_Minh)
-timezone: Australia/Brisbane
+timezone: Asia/Ho_Chi_Minh # Tui để giờ VN cho ông dễ theo dõi
 
 # ------------------------------------
-# CẤU HÌNH KỸ THUẬT (Đừng đụng vào)
+# KHÔNG CẦN CHỈNH Ở DƯỚI
 # ------------------------------------
 remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
 markdown: kramdown
@@ -24,24 +24,16 @@ sass:
   style: compressed
 plugins: ["jekyll-remote-theme"]
 
-# ------------------------------------
-# CẤU HÌNH GIAO DIỆN
-# ------------------------------------
 theme-settings:
-  # Thông tin bản quyền dưới chân trang
   copyright:
     author: TrieuLM-2
     license: "All rights reserved."
     year: 2025
 
-# ------------------------------------
-# CẤU HÌNH MẶC ĐỊNH (Quan trọng nè)
-# ------------------------------------
-# Cái này giúp ông không cần gõ layout: post nhiều lần
 defaults:
   -
     scope:
       path: "" 
-      type: "posts" # Áp dụng cho bài viết
+      type: "posts"
     values:
       layout: "post"
