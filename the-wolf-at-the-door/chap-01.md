@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Chương 1
-description: *Kẻ Chạy Trốn & Cái Ruột Thừa (Của BSI)*
+description: "Kẻ Chạy Trốn & Cái Ruột Thừa (Của BSI)"
 parent: Giới thiệu: The Wolf at the Door
 nav_order: 2
 ---

@@ -159,3 +159,103 @@ document.addEventListener("DOMContentLoaded", function() {
         border-bottom: 2px solid #fff; /* Hiện gạch chân */
     }
 </style>
+
+<style>
+  /* 1. Cái nút bật tắt lơ lửng */
+  #darkModeBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Để bên trái cho đỡ đụng cái thông báo bên phải */
+    width: 50px;
+    height: 50px;
+    background-color: #2d3436;
+    color: #dfe6e9;
+    border: 2px solid #dfe6e9;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #darkModeBtn:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi di chuột vào */
+    background-color: #000;
+  }
+
+  /* 2. Giao diện Dark Mode (Khi body có class 'dark-mode') */
+  body.dark-mode {
+    background-color: #121212 !important; /* Nền đen thẫm */
+    color: #e0e0e0 !important; /* Chữ trắng xám */
+  }
+
+  /* Fix lại cái khung bài viết */
+  body.dark-mode .main-content {
+    background-color: #121212 !important;
+  }
+
+  /* Chữ trong bài */
+  body.dark-mode p {
+    color: #b0b3b8 !important; /* Xám nhẹ cho đỡ chói */
+  }
+
+  /* Tiêu đề */
+  body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #55efc4 !important; /* Xanh mint sáng dạ quang bao nổi */
+  }
+
+  /* Đường link */
+  body.dark-mode a {
+    color: #74b9ff !important; /* Xanh dương baby */
+  }
+
+  /* Cái header trên cùng (chỗ tên web) cho tối lại luôn */
+  body.dark-mode .page-header {
+    background-image: linear-gradient(120deg, #2d3436, #000000) !important;
+    color: #fff !important;
+  }
+
+  /* Blockquote (trích dẫn) */
+  body.dark-mode blockquote {
+    color: #dfe6e9 !important;
+    border-left-color: #55efc4 !important;
+  }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Tạo cái nút bấm
+    const btn = document.createElement("button");
+    btn.id = "darkModeBtn";
+    btn.innerHTML = "🌙"; // Mặc định là hình mặt trăng
+    btn.title = "Bật/Tắt chế độ ban đêm";
+    document.body.appendChild(btn);
+
+    // 2. Check xem trước đó ông có bật chưa (Lưu trong bộ nhớ máy)
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        btn.innerHTML = "☀️"; // Nếu đang tối thì hiện mặt trời
+    }
+
+    // 3. Sự kiện click nút
+    btn.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+        
+        let theme = "light";
+        if (document.body.classList.contains("dark-mode")) {
+            theme = "dark";
+            btn.innerHTML = "☀️"; // Chuyển sang icon sáng
+        } else {
+            btn.innerHTML = "🌙"; // Chuyển về icon tối
+        }
+        
+        // Lưu lại lựa chọn để lần sau vào web nó tự nhớ
+        localStorage.setItem("theme", theme);
+    });
+});
+</script>

@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Chương 1
-description: "Kẻ Chạy Trốn & Cái Ruột Thừa (Của BSI)"
+description: "Khói Thuốc & Hợp Đồng Tử Thần"
 parent: The Foxhole Court
 nav_order: 2
 ---
 
-# Chương 1
 
 Neil Josten mặc kệ điếu thuốc cháy rụi đến tận đầu lọc, chẳng buồn rít lấy một hơi. Cậu đâu có thèm khát gì nicotine; thứ cậu cần là làn khói khét lẹt kia, thứ mùi gợi nhớ về mẹ. Chỉ cần hít vào thật chậm, cậu gần như có thể nếm được dư vị của xăng và lửa vẫn còn lẩn khuất đâu đây.
 
@@ -162,4 +161,4 @@ Andrew mở cửa sau chiếc SUV của Hernandez khi Neil đi ngang qua, nở m
 
 Neil ném cho gã một cái nhìn lạnh lùng rồi tăng tốc chạy. Đến rìa bãi đậu xe, cậu đã chạy hết tốc lực. Cậu bỏ lại sân vận động, bỏ lại lũ Cáo và những lời hứa hẹn quá đỗi tốt đẹp lại phía sau, nhưng bản hợp đồng chưa ký trong túi xách lại nặng trĩu như một mỏ neo đeo trên cổ cậu.
 
-[Bấm để qua chương sau](./chap-02)
+[Chương 2](./chap-02)
