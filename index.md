@@ -27,6 +27,14 @@ tags: [MM Romance, Mystery, Fantasy, Sport, Psychological]
 
 ---
 
+### 🏒 [The Long Game (Ván Đấu Dài Hơi)](./the-long-game/)
+> **Tác giả:** Rachel Reid
+> **Thể loại:** Sport (Hockey), Rivals to Lovers, Secret Dating.
+>
+> *Shane Hollander và Ilya Rozanov: Hai ngôi sao khúc côn cầu, mười năm đối đầu kịch liệt trên sân băng, nhưng lại yêu nhau điên cuồng trong bóng tối. Một ván cược tình yêu đầy rủi ro và đam mê.*
+
+---
+
 ### 🚧 Dự án sắp tới
 * Đang cập nhật thêm... (Chờ tui rảnh đã)
 

@@ -181,4 +181,13 @@ Neil đứng chôn chân nhìn theo bóng lưng bọn họ. Cậu bắt đầu n
 
 "Sẵn sàng," Neil nói, và bước theo đồng đội của mình.
 
-[Chương 3.](./chap-03)
+---
+
+<nav style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; margin-top: 2rem; border-top: 1px solid #eee;">
+  <a href="./chap-01" style="text-decoration: none; padding: 0.5rem 1rem; background: #f5f5f5; border-radius: 4px; color: #333;">
+    ← Chương trước
+  </a>
+  <a href="./chap-03" style="text-decoration: none; padding: 0.5rem 1rem; background: #f5f5f5; border-radius: 4px; color: #333;">
+    Chương tiếp →
+  </a>
+</nav>
