@@ -1,12 +1,20 @@
-# Site settings
+# ------------------------------------
+# THÔNG TIN CƠ BẢN (Sửa thoải mái)
+# ------------------------------------
 title: Góc Truyện Của Tui
 email: thanhho1356@gmail.com
 description: Một trang web tui up mấy thứ linh tinh về truyện
-url: "https://adamrehn.github.io"
-baseurl: "/jekyll-theme-gitbook-demo"
+
+# QUAN TRỌNG: Link web (Không sửa lung tung nha)
+url: "https://trieulm-2.github.io"
+baseurl: "/goctruyennho"
+
+# Múi giờ (Ông ở Úc hả? Nếu ở VN thì sửa thành Asia/Ho_Chi_Minh)
 timezone: Australia/Brisbane
 
-# Build settings
+# ------------------------------------
+# CẤU HÌNH KỸ THUẬT (Đừng đụng vào)
+# ------------------------------------
 remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
 markdown: kramdown
 kramdown:
@@ -14,55 +22,26 @@ kramdown:
 exclude: [".gitignore", "LICENSE", "README.md"]
 sass:
   style: compressed
-
-# Only needed for local development, will be enabled automatically by GitHub Pages
 plugins: ["jekyll-remote-theme"]
 
-# Theme settings
+# ------------------------------------
+# CẤU HÌNH GIAO DIỆN
+# ------------------------------------
 theme-settings:
-  
-  # Copyright settings
+  # Thông tin bản quyền dưới chân trang
   copyright:
-    author: Adam Rehn
-    license: "Licensed under the MIT License, see the file [LICENSE](https://github.com/adamrehn/jekyll-theme-gitbook-demo/blob/master/LICENSE) for details."
-    year: 2020
-  
-  # The collection that contains our chapters
-  collection: chapters
-  
-  # Enable generation of links for chapter index pages
-  indices: true
+    author: TrieuLM-2
+    license: "All rights reserved."
+    year: 2025
 
-# Configure the permalinks for each chapter
-collections_dir: _collections
-collections:
-  chapters:
-    output: true
-    permalink: /:path
-
-# Use front matter defaults to supply the metadata for each chapter
+# ------------------------------------
+# CẤU HÌNH MẶC ĐỊNH (Quan trọng nè)
+# ------------------------------------
+# Cái này giúp ông không cần gõ layout: post nhiều lần
 defaults:
   -
     scope:
-      path: ""
-      type: "chapters"
+      path: "" 
+      type: "posts" # Áp dụng cho bài viết
     values:
-      layout: "default"
-  -
-    scope:
-      path: "_collections/_chapters/first-chapter"
-    values:
-      chapter: "First Chapter"
-      chapnum: 1
-  -
-    scope:
-      path: "_collections/_chapters/second-chapter"
-    values:
-      chapter: "Second Chapter"
-      chapnum: 2
-  -
-    scope:
-      path: "_collections/_chapters/third-chapter"
-    values:
-      chapter: "Third Chapter"
-      chapnum: 3
+      layout: "post"
