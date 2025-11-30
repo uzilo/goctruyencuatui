@@ -101,3 +101,61 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Định nghĩa các mục trong Menu
+    // Ông muốn đổi tên hay thêm mục thì sửa ở đây nha
+    const menuItems = [
+        { name: "🏠 Trang Chủ", link: "{{ site.baseurl }}/" },
+        { name: "🔥 Truyện Đang Ra", link: "{{ site.baseurl }}/tags/#dang-ra" },
+        { name: "✅ Hoàn Thành", link: "{{ site.baseurl }}/tags/#hoan-thanh" },
+        { name: "🍂 Drop", link: "{{ site.baseurl }}/tags/#drop" }
+    ];
+
+    // 2. Tạo khung HTML cho Menu
+    const navBar = document.createElement('div');
+    navBar.className = 'custom-nav';
+    
+    let navHTML = '';
+    menuItems.forEach(item => {
+        navHTML += `<a href="${item.link}">${item.name}</a>`;
+    });
+    navBar.innerHTML = navHTML;
+
+    // 3. Chèn vào dưới cái tên web (trong thẻ header)
+    const header = document.querySelector('.page-header');
+    if (header) {
+        header.appendChild(navBar);
+    }
+});
+</script>
+
+<style>
+    /* Khung chứa menu */
+    .custom-nav {
+        display: flex;
+        justify-content: center; /* Căn giữa */
+        flex-wrap: wrap;         /* Tự xuống dòng nếu màn hình nhỏ */
+        margin-top: 20px;        /* Cách cái tên web ra xíu */
+        gap: 20px;               /* Khoảng cách giữa các mục */
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Từng cái link trong menu */
+    .custom-nav a {
+        color: rgba(255, 255, 255, 0.8) !important; /* Màu trắng mờ cho sang */
+        text-decoration: none !important;
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 2px solid transparent; /* Gạch chân tàng hình */
+        transition: all 0.3s ease;
+    }
+
+    /* Khi di chuột vào */
+    .custom-nav a:hover {
+        color: #fff !important; /* Sáng lên */
+        border-bottom: 2px solid #fff; /* Hiện gạch chân */
+    }
+</style>
