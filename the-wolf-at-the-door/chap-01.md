@@ -1,11 +1,11 @@
 ---
-layout: post
-title: Chương 1: Kẻ Chạy Trốn & Cái Ruột Thừa (Của BSI)
+layout: default
+title: **Chương 1**
+description: *Kẻ Chạy Trốn & Cái Ruột Thừa (Của BSI)*
 parent: Giới thiệu: The Wolf at the Door
 nav_order: 2
 ---
 
-# Chương 1
 
 Đáng lẽ giờ này Cooper Dayton phải đang ung dung lái xe về D.C., chứ không phải cắm đầu chạy thục mạng qua mấy con hẻm ở Bethesda thế này. Rõ ràng là bố anh đã sai bét.
 
