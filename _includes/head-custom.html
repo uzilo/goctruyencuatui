@@ -37,3 +37,67 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Đổ bóng nhẹ cho ảnh nổi */
   }
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Tạo chìa khóa riêng cho từng trang (Chap 1 khác Chap 2)
+    var storageKey = 'scrollPos-' + window.location.pathname;
+
+    // 2. Kiểm tra xem có vị trí cũ không
+    var savedPos = localStorage.getItem(storageKey);
+    
+    if (savedPos > 0) {
+        // Nếu có thì trượt nhẹ xuống chỗ cũ
+        setTimeout(function() {
+            window.scrollTo({ top: savedPos, behavior: 'smooth' });
+            
+            // Hiện thông báo nhỏ xíu góc màn hình cho ngầu
+            showNotification("📍 Đã quay lại chỗ đọc cũ nha bồ!");
+        }, 500); // Đợi 0.5s cho web load xong ảnh ọt rồi mới trượt
+    }
+
+    // 3. Lưu vị trí mỗi khi cuộn chuột (Delay 1 xíu cho đỡ lag máy)
+    var timeout;
+    window.addEventListener('scroll', function() {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            localStorage.setItem(storageKey, window.scrollY);
+        }, 200);
+    });
+
+    // Hàm tạo thông báo cute
+    function showNotification(message) {
+        var note = document.createElement('div');
+        note.innerHTML = message;
+        note.style.position = 'fixed';
+        note.style.bottom = '20px';
+        note.style.right = '20px';
+        note.style.backgroundColor = '#159957'; // Màu xanh của theme
+        note.style.color = 'white';
+        note.style.padding = '10px 20px';
+        note.style.borderRadius = '5px';
+        note.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+        note.style.zIndex = '9999';
+        note.style.fontSize = '14px';
+        note.style.animation = 'fadeInOut 3s forwards';
+        
+        // Thêm CSS animation trực tiếp
+        var style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeInOut {
+                0% { opacity: 0; transform: translateY(20px); }
+                10% { opacity: 1; transform: translateY(0); }
+                80% { opacity: 1; transform: translateY(0); }
+                100% { opacity: 0; transform: translateY(20px); }
+            }
+        `;
+        document.head.appendChild(style);
+        document.body.appendChild(note);
+
+        // Tự biến mất sau 3s
+        setTimeout(function() {
+            note.remove();
+        }, 3000);
+    }
+});
+</script>
