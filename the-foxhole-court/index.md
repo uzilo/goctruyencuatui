@@ -30,8 +30,8 @@ Một bản hợp đồng tử thần. Một quá khứ đẫm máu đang đuổ
 ## 📑 Mục Lục
 
 * **[Chương 1: Khói Thuốc & Hợp Đồng Tử Thần](./chap-01)** ✅
+* **[Chương 2: (Tiêu đề chương 2 điền vào đây)](./chap-02)** 🆕
 
-* Chương 2: (Sắp ra mắt) 🔒
 * Chương 3: (Đang lết...) 🔒
 * Chương 4 🔒
 * Chương 5
