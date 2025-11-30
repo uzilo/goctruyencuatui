@@ -1,39 +1,8 @@
-# ------------------------------------
-# CẤU HÌNH CHO REPO: goctruyencuatui
-# ------------------------------------
 title: Góc Truyện Của Tui
 email: thanhho1356@gmail.com
-description: Nơi lưu trữ những câu chuyện hay ho
-# ------------------------------------
-# QUAN TRỌNG: Sửa đúng 2 dòng này
-# ------------------------------------
+description: Web đọc truyện đam mỹ tuyển chọn
 url: "https://trieulm-2.github.io"
-baseurl: "/goctruyencuatui"        <--- Nhớ phải là tên repo mới nha!
-
-timezone: Asia/Ho_Chi_Minh # Tui để giờ VN cho ông dễ theo dõi
-
-# ------------------------------------
-# KHÔNG CẦN CHỈNH Ở DƯỚI
-# ------------------------------------
+baseurl: "/goctruyencuatui"
 remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
-markdown: kramdown
-kramdown:
-  input: GFM
-exclude: [".gitignore", "LICENSE", "README.md"]
-sass:
-  style: compressed
 plugins: ["jekyll-remote-theme"]
-
-theme-settings:
-  copyright:
-    author: TrieuLM-2
-    license: "All rights reserved."
-    year: 2025
-
-defaults:
-  -
-    scope:
-      path: "" 
-      type: "posts"
-    values:
-      layout: "post"
+markdown: kramdown
