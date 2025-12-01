@@ -70,23 +70,7 @@
         gap: 15px;
     }
 
-    .search-btn {
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #666;
-        padding: 5px;
-    }
-
-    .login-btn {
-        background-color: var(--primary-color);
-        color: white !important;
-        padding: 6px 16px;
-        border-radius: 4px;
-        text-decoration: none !important;
-        font-weight: 700;
-        font-size: 0.9rem;
-    }
+    /* Đã xóa CSS cho .search-btn và .login-btn vì ông không dùng nữa */
 
     .mobile-menu-btn { display: none; border: none; background: none; font-size: 1.5rem; }
 
@@ -181,6 +165,74 @@
         border-bottom: 3px solid var(--primary-color);
     }
 
+    /* === 5. BOOKSHELF GRID (Phần bị lỗi cũ) === */
+    .bookshelf-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Tự động chia cột, tối thiểu 200px */
+        gap: 30px; /* Khoảng cách giữa các truyện */
+        padding: 20px 0;
+    }
+
+    .book-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none !important;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid #eee;
+    }
+
+    .book-card:hover {
+        transform: translateY(-5px); /* Bay lên nhẹ khi di chuột */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card-cover {
+        width: 100%;
+        aspect-ratio: 2/3; /* Tỉ lệ chuẩn sách */
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
+
+    .card-body {
+        padding: 15px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 0 0 10px 0;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Cắt bớt nếu tên dài quá 2 dòng */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .card-author {
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        margin-bottom: 10px;
+    }
+
+    .card-tag {
+        margin-top: auto; /* Đẩy xuống đáy */
+        display: inline-block;
+        background-color: #f1f8e9;
+        color: #159957;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
     /* Footer */
     .site-footer {
         text-align: center;
@@ -195,7 +247,12 @@
     body.dark-mode .site-logo { color: #fff; }
     body.dark-mode .epub-title { color: #55efc4; }
     body.dark-mode .nav-item { color: #aaa; }
-    body.dark-mode .search-btn { color: #aaa; }
+    
+    /* Dark Mode cho Book Card */
+    body.dark-mode .book-card { background: #2d3436; border-color: #444; }
+    body.dark-mode .card-title { color: #dfe6e9; }
+    body.dark-mode .card-author { color: #b2bec3; }
+    body.dark-mode .card-tag { background: #00b894; color: #fff; }
 
     /* Mobile Responsive */
     @media (max-width: 768px) {
