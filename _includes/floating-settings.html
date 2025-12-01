@@ -63,6 +63,20 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Lora:wght@400;600&family=Roboto:wght@300;400;500&family=Open+Sans:wght@400;600&family=Patrick+Hand&display=swap');
 
+  /* CSS Variables for global settings */
+  :root {
+    --reader-font-size: 100%;
+    --reader-line-height: 1.8;
+    --reader-font-family: 'Nunito Sans', sans-serif;
+  }
+
+  /* Apply settings to all text elements */
+  body {
+    font-size: var(--reader-font-size) !important;
+    line-height: var(--reader-line-height) !important;
+    font-family: var(--reader-font-family) !important;
+  }
+
   .floating-settings {
     position: fixed;
     bottom: 30px;
@@ -260,20 +274,29 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// ÁP DỤNG TOÀN TRANG
+// ÁP DỤNG TOÀN TRANG - IMPROVED VERSION
 
 function applyFont(font) {
-  // Áp dụng cho toàn bộ body
-  document.body.style.fontFamily = font;
+  // Áp dụng cho CSS variable để toàn bộ site kế thừa
+  document.documentElement.style.setProperty('--reader-font-family', font);
+  document.body.style.setProperty('font-family', font, 'important');
+  
   document.getElementById("font-selector").value = font; 
   localStorage.setItem("reader_font", font);
 }
 
 function applySize(size) {
-  // Áp dụng fontSize cho html root để tất cả element kế thừa
-  const baseSize = 16; // px mặc định của browser
-  const newSize = (baseSize * size / 100) + 'px';
-  document.documentElement.style.fontSize = newSize;
+  // Sử dụng CSS variable để áp dụng toàn site
+  document.documentElement.style.setProperty('--reader-font-size', size + '%');
+  document.body.style.setProperty('font-size', size + '%', 'important');
+  
+  // Áp dụng cho tất cả text elements
+  const textElements = document.querySelectorAll('p, div, article, section, li, h1, h2, h3, h4, h5, h6, span, a, td, th, blockquote, pre, code');
+  textElements.forEach(el => {
+    if (!el.closest('.floating-settings')) { // Tránh áp dụng vào settings panel
+      el.style.fontSize = 'inherit';
+    }
+  });
   
   document.getElementById("font-size-val").innerText = size + "%";
   document.getElementById("font-size-range").value = size;
@@ -281,13 +304,16 @@ function applySize(size) {
 }
 
 function applyLine(height) {
-  // Áp dụng line-height cho body và các element chứa text
-  document.body.style.lineHeight = height;
+  // Sử dụng CSS variable
+  document.documentElement.style.setProperty('--reader-line-height', height);
+  document.body.style.setProperty('line-height', height, 'important');
   
-  // Cũng áp dụng cho các element cụ thể
-  const textElements = document.querySelectorAll('p, div, article, section, li');
+  // Áp dụng cho toàn bộ text elements
+  const textElements = document.querySelectorAll('p, div, article, section, li, h1, h2, h3, h4, h5, h6, span, a, td, th, blockquote, pre');
   textElements.forEach(el => {
-    el.style.lineHeight = height;
+    if (!el.closest('.floating-settings')) { // Tránh áp dụng vào settings panel
+      el.style.lineHeight = height;
+    }
   });
   
   document.getElementById("line-height-val").innerText = height;
