@@ -128,10 +128,10 @@ nav_order: 1
 <p class="lang-en">He blinked. “Well, nothing. But when I asked Angie”—Malcom’s girlfriend, currently dressed as Alice because of course she was—“who the hot, grumpy guy was, she said, ‘Oh that’s Luc. He’s Jon Fleming’s kid.’”</p>
 
 <p class="lang-vi">Đó là Luc, sự nghiệp của cậu ta bết bát lắm. Đó là Luc, cậu ta chưa từng có mối quan hệ nào ổn định trong suốt năm năm qua... Đó là những định kiến mà người ta thường nói về tôi. Còn tôi chẳng có lựa chọn nào khác ngoài việc chịu đựng những điều tiếng đó, nhưng rốt cuộc mọi chuyện đã sai ở đâu?</p>
-<p class="lang-en">I didn’t like that being the thing people told each other about me. But then again, what was the alternative? That’s Luc, his career’s in the toilet? That’s Luc, he’s not had a stable relationship in five years? That’s Luc, where did it all go wrong? “Yeah. That’s me.”</p>
+<p class="lang-en">I didn’t like that being the thing people told each other about me. But then again, what was the alternative? That’s Luc, his career’s in the toilet? That’s Luc, he’s not had a stable relationship in five years? That’s Luc, where did it all go wrong?</p>
 
 <p class="lang-vi">“Phải. Chính là tôi.”</p>
-<p class="lang-en"></p>
+<p class="lang-en">“Yeah. That’s me.”</p>
 
 <!-- MORE -->
 </div>
