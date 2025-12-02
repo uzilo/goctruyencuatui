@@ -43,7 +43,7 @@ nav_order: 1
     </a>
 
     <a href="./truyen/the-long-game/" class="book-card">
-        <img src="./truyen/the-long-game/cover.png" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="./truyen/the-long-game/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">The Long Game (Ván Đấu Dài Hơi)</h3>
             <div class="card-author">Tác giả: Rachel Reid</div>
