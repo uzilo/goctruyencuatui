@@ -54,18 +54,28 @@ nav_order: 1
         </div>
     </a>
 
-    <a href="./truyen/red-white-and-royal-blue/" class="book-card">
-        <img src="./truyen/red-white-and-royal-blue/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
-        <div class="card-body">
-            <h3 class="card-title">Red, White & Royal Blue (Đỏ, Trắng và Hoàng Gia Xanh)</h3>
-            <div class="card-author">Tác giả: Casey McQuiston</div>
-            <div style="font-size: 0.9rem; color: #666; margin-bottom: 15px; flex-grow: 1;">
-                Chuyện tình "oan gia" chấn động địa cầu giữa Alex - con trai Tổng thống Mỹ và Henry - Hoàng tử nước Anh. Từ giả vờ thân thiết đến yêu nhau quên lối về.
-            </div>
-            <span class="card-tag">Rom-Com, Hoàng gia, Enemies to lovers</span>
-        </div>
-    </a>
+</div>
 
+<div style="margin-top: 50px;">
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <h2 style="margin: 0; color: #27ae60; font-weight: 700;">✅ Truyện Đã Hoàn Thành</h2>
+        <div style="flex-grow: 1; height: 1px; background: #eee; margin-left: 20px;"></div>
+    </div>
+
+    <div class="bookshelf-grid">
+        <a href="./truyen/red-white-and-royal-blue/" class="book-card" style="border: 2px solid #27ae60;">
+            <div style="position: absolute; top: 10px; right: 10px; background: #27ae60; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">FULL</div>
+            <img src="./truyen/red-white-and-royal-blue/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+            <div class="card-body">
+                <h3 class="card-title" style="color: #27ae60;">Red, White & Royal Blue</h3>
+                <div class="card-author">Tác giả: Casey McQuiston</div>
+                <div style="font-size: 0.9rem; color: #666; margin-bottom: 15px; flex-grow: 1;">
+                    Chuyện tình "oan gia" chấn động địa cầu giữa Alex - con trai Tổng thống Mỹ và Henry - Hoàng tử nước Anh. Từ giả vờ thân thiết đến yêu nhau quên lối về.
+                </div>
+                <span class="card-tag" style="background: #e8f8f5; color: #27ae60;">Rom-Com, Hoàng gia, Enemies to lovers</span>
+            </div>
+        </a>
+    </div>
 </div>
 
 <div style="margin-top: 50px;">
