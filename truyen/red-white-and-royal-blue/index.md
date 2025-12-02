@@ -2,11 +2,11 @@
 layout: default
 title: Red, White & Royal Blue
 nav_order: 2
-tags: [MM Romance, Comedy, Political, DangRa]
+tags: [MM Romance, Comedy, Political, HoanThanh]
 
 # --- DỮ LIỆU ĐỂ TỰ ĐỘNG LÊN TOP TRANG CHỦ ---
 type: story
-last_updated: 2025-12-02 17:00
+last_updated: 2025-12-02 18:00
 author: Casey McQuiston
 summary: "Scandal Hoàng gia chấn động! Con trai Tổng thống Mỹ và Hoàng tử Anh buộc phải giả vờ làm bạn thân sau sự cố bánh kem ngàn đô."
 cover_image: /truyen/red-white-and-royal-blue/cover.jpg
@@ -16,7 +16,7 @@ genres: "Rom-Com, Hoàng gia, Enemies to lovers"
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">
   <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
-  <a href="{{ site.baseurl }}/tags/#dang-ra" style="text-decoration:none; color:#888;">Truyện Đang Ra</a> / 
+  <a href="{{ site.baseurl }}/tags/#hoan-thanh" style="text-decoration:none; color:#888;">Truyện Hoàn Thành</a> / 
   <span style="color:#159957;">Chi tiết sách</span>
 </div>
 
@@ -29,7 +29,7 @@ genres: "Rom-Com, Hoàng gia, Enemies to lovers"
         <h1 class="epub-title">Red, White & Royal Blue</h1>
         
         <div class="epub-meta">
-            by <strong>Casey McQuiston</strong> • Cập nhật: 02/12/2025
+            by <strong>Casey McQuiston</strong> • Trạng thái: <span style="color: #e74c3c; font-weight: bold;">Đã Hoàn Thành</span>
         </div>
 
         <div class="epub-rating">
@@ -48,7 +48,7 @@ genres: "Rom-Com, Hoàng gia, Enemies to lovers"
 
 <div class="tab-container">
     <button class="tab-btn active" onclick="openTab('details', this)">Giới Thiệu</button>
-    <button class="tab-btn" onclick="openTab('toc', this)">Mục Lục (15 Chương)</button>
+    <button class="tab-btn" onclick="openTab('toc', this)">Mục Lục (Full 15 Chương)</button>
 </div>
 
 <div id="tab-content-details" class="tab-content" style="display: block;">
@@ -120,24 +120,44 @@ genres: "Rom-Com, Hoàng gia, Enemies to lovers"
 
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-09" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 9: Come Out, Hồ LBJ & Sự Biến Mất Của Henry <span style="float: right; color: #159957; font-size: 0.8rem; border: 1px solid #159957; padding: 2px 6px; border-radius: 4px;">Mới</span>
+                Chương 9: Come Out, Hồ LBJ & Sự Biến Mất Của Henry
             </a>
         </li>
 
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-10" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 10: Pyramus, Thisbe & Chiếc Nhẫn Gia Huy <span style="float: right; color: #159957; font-size: 0.8rem; border: 1px solid #159957; padding: 2px 6px; border-radius: 4px;">Mới</span>
+                Chương 10: Pyramus, Thisbe & Chiếc Nhẫn Gia Huy
             </a>
         </li>
 
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-11" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 11: Những Bức Thư Tình & Lịch Sử <span style="float: right; color: #159957; font-size: 0.8rem; border: 1px solid #159957; padding: 2px 6px; border-radius: 4px;">Mới</span>
+                Chương 11: Những Bức Thư Tình & Lịch Sử
             </a>
         </li>
         
-        <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 12 - 15: (Đang cập nhật...) 🔒
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-12" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 12: Scandal Ảnh Nóng & Kế Hoạch Hẹn Hò Giả
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-13" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 13: Scandal Vỡ Lở & Cuộc Đối Đầu Hoàng Gia
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-14" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 14: Sự Thật Phơi Bày & Bài Phát Biểu Lịch Sử
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-15" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 15: Chiến Thắng Lịch Sử & Trở Về Nhà <span style="float: right; color: #fff; background-color: #e74c3c; font-size: 0.8rem; padding: 2px 8px; border-radius: 4px;">HOÀN</span>
+            </a>
         </li>
     </ul>
 </div>
