@@ -6,7 +6,7 @@ tags: [MM Romance, Comedy, Political, DangRa]
 
 # --- DỮ LIỆU ĐỂ TỰ ĐỘNG LÊN TOP TRANG CHỦ ---
 type: story
-last_updated: 2025-12-02 15:30
+last_updated: 2025-12-02 17:00
 author: Casey McQuiston
 summary: "Scandal Hoàng gia chấn động! Con trai Tổng thống Mỹ và Hoàng tử Anh buộc phải giả vờ làm bạn thân sau sự cố bánh kem ngàn đô."
 cover_image: /truyen/red-white-and-royal-blue/cover.jpg
@@ -84,15 +84,60 @@ genres: "Rom-Com, Hoàng gia, Enemies to lovers"
 
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-03" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 3: Hậu Quả Truyền Thông & Những Tin Nhắn Đầu Tiên <span style="float: right; color: #159957; font-size: 0.8rem; border: 1px solid #159957; padding: 2px 6px; border-radius: 4px;">Mới</span>
+                Chương 3: Hậu Quả Truyền Thông & Những Tin Nhắn Đầu Tiên
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-04" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 4: Tai Họa Gà Tây Ác Liệt & Nụ Hôn Trong Vườn
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-05" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 5: Cơn Khủng Hoảng Giới Tính & Sự Cố Gà Tây
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-06" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 6: Căn Phòng Đỏ & Những Email Bí Mật
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-07" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 7: Paris, New York & Những Tin Nhắn Đêm Khuya
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-08" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 8: Wimbledon, Phòng Nài Ngựa & Những Email Ướt Át
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-09" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 9: Come Out, Hồ LBJ & Sự Biến Mất Của Henry <span style="float: right; color: #159957; font-size: 0.8rem; border: 1px solid #159957; padding: 2px 6px; border-radius: 4px;">Mới</span>
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-10" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 10: Pyramus, Thisbe & Chiếc Nhẫn Gia Huy <span style="float: right; color: #159957; font-size: 0.8rem; border: 1px solid #159957; padding: 2px 6px; border-radius: 4px;">Mới</span>
+            </a>
+        </li>
+
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-11" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 11: Những Bức Thư Tình & Lịch Sử <span style="float: right; color: #159957; font-size: 0.8rem; border: 1px solid #159957; padding: 2px 6px; border-radius: 4px;">Mới</span>
             </a>
         </li>
         
         <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 4: (Chưa có đâu đừng hối) 🔒
-        </li>
-        <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 5 - 15: (Sắp ra mắt)
+            Chương 12 - 15: (Đang cập nhật...) 🔒
         </li>
     </ul>
 </div>
