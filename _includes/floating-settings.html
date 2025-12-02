@@ -1,13 +1,14 @@
 <div id="settings-bar" class="floating-settings">
   <button id="settings-toggle" class="settings-toggle" title="Cài đặt đọc">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+      <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+      <path
+        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" />
     </svg>
   </button>
-  
+
   <div id="settings-panel" class="settings-panel">
-    
+
     <div class="setting-group">
       <div class="setting-header">
         <span class="setting-icon">Aa</span>
@@ -56,6 +57,18 @@
       </div>
     </div>
 
+    <div class="setting-group">
+      <div class="setting-header">
+        <span class="setting-icon">🌐</span>
+        <span class="setting-title">Ngôn ngữ</span>
+      </div>
+      <div class="theme-options">
+        <button class="theme-btn lang-btn active" data-lang="vi" onclick="setLanguage('vi')">🇻🇳 Tiếng Việt</button>
+        <button class="theme-btn lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+        <button class="theme-btn lang-btn" data-lang="bi" onclick="setLanguage('bi')">🇻🇳🇬🇧 Song ngữ</button>
+      </div>
+    </div>
+
     <button id="reset-btn" class="reset-btn">🔄 Đặt lại mặc định</button>
   </div>
 </div>
@@ -99,6 +112,7 @@
     justify-content: center;
     transition: transform 0.2s, background 0.2s;
   }
+
   .settings-toggle:hover {
     transform: rotate(45deg);
     background: #128249;
@@ -112,20 +126,23 @@
     background: white;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     display: none;
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.3s, transform 0.3s;
   }
+
   .settings-panel.show {
     display: block;
     opacity: 1;
     transform: translateY(0);
   }
 
-  .setting-group { margin-bottom: 15px; }
-  
+  .setting-group {
+    margin-bottom: 15px;
+  }
+
   .setting-header {
     display: flex;
     align-items: center;
@@ -135,7 +152,11 @@
     font-size: 0.9rem;
     color: #333;
   }
-  .setting-icon { color: #159957; font-size: 1.1rem; }
+
+  .setting-icon {
+    color: #159957;
+    font-size: 1.1rem;
+  }
 
   .setting-input {
     width: 100%;
@@ -144,14 +165,17 @@
     border-radius: 6px;
     outline: none;
   }
-  
+
   .range-control {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .full-range { width: 100%; }
-  
+
+  .full-range {
+    width: 100%;
+  }
+
   .control-btn {
     background: #eee;
     border: none;
@@ -161,9 +185,16 @@
     cursor: pointer;
     font-weight: bold;
   }
-  .control-btn:hover { background: #ddd; }
 
-  .theme-options { display: flex; gap: 8px; }
+  .control-btn:hover {
+    background: #ddd;
+  }
+
+  .theme-options {
+    display: flex;
+    gap: 8px;
+  }
+
   .theme-btn {
     flex: 1;
     border: 1px solid #ddd;
@@ -174,7 +205,12 @@
     font-size: 0.85rem;
     font-weight: 600;
   }
-  .theme-btn.active { border-color: #159957; color: #159957; background: #e8f5e9; }
+
+  .theme-btn.active {
+    border-color: #159957;
+    color: #159957;
+    background: #e8f5e9;
+  }
 
   .reset-btn {
     width: 100%;
@@ -187,7 +223,11 @@
     cursor: pointer;
     font-size: 0.85rem;
   }
-  .reset-btn:hover { border-color: #d9534f; color: #d9534f; }
+
+  .reset-btn:hover {
+    border-color: #d9534f;
+    color: #d9534f;
+  }
 
   /* Theme styles - Áp dụng toàn trang */
   body.dark-mode {
@@ -222,132 +262,194 @@
     border: 1px solid #444;
     color: #eee;
   }
-  body.dark-mode .setting-header { color: #eee; }
-  body.dark-mode .setting-input, body.dark-mode .control-btn, body.dark-mode .theme-btn { 
-    background: #444; color: white; border: none; 
+
+  body.dark-mode .setting-header {
+    color: #eee;
   }
-  body.dark-mode .reset-btn { color: #aaa; border-color: #666; }
+
+  body.dark-mode .setting-input,
+  body.dark-mode .control-btn,
+  body.dark-mode .theme-btn {
+    background: #444;
+    color: white;
+    border: none;
+  }
+
+  body.dark-mode .reset-btn {
+    color: #aaa;
+    border-color: #666;
+  }
+
+  /* Language Modes */
+  body.mode-lang-vi .lang-en {
+    display: none !important;
+  }
+
+  body.mode-lang-en .lang-vi {
+    display: none !important;
+  }
+
+  /* Bilingual mode styling */
+  body.mode-lang-bi .lang-en {
+    color: #666;
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    border-left: 3px solid #eee;
+    padding-left: 15px;
+    font-size: 0.95em;
+  }
+
+  /* Dark mode bilingual adjustments */
+  body.dark-mode.mode-lang-bi .lang-en {
+    color: #aaa;
+    border-left-color: #444;
+  }
+
+  body.sepia-mode.mode-lang-bi .lang-en {
+    color: #7f6a55;
+    border-left-color: #e0d5c1;
+  }
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const panel = document.getElementById("settings-panel");
-  const toggleBtn = document.getElementById("settings-toggle");
-  
-  // Toggle Panel
-  toggleBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    panel.classList.toggle("show");
+  document.addEventListener("DOMContentLoaded", function () {
+    const panel = document.getElementById("settings-panel");
+    const toggleBtn = document.getElementById("settings-toggle");
+
+    // Toggle Panel
+    toggleBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      panel.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== toggleBtn) {
+        panel.classList.remove("show");
+      }
+    });
+
+    // Load Preferences
+    const savedFont = localStorage.getItem("reader_font");
+    const savedSize = localStorage.getItem("reader_size");
+    const savedLine = localStorage.getItem("reader_line");
+    const savedTheme = localStorage.getItem("reader_theme");
+    const savedLang = localStorage.getItem("reader_lang");
+
+    if (savedFont) applyFont(savedFont);
+    if (savedSize) applySize(savedSize);
+    if (savedLine) applyLine(savedLine);
+    if (savedTheme) setTheme(savedTheme);
+    if (savedLang) setLanguage(savedLang);
+    else setLanguage('vi'); // Default to Vietnamese
+
+    // Event Listeners
+    document.getElementById("font-selector").addEventListener("change", function () { applyFont(this.value); });
+    document.getElementById("font-size-range").addEventListener("input", function () { applySize(this.value); });
+    document.getElementById("line-height-range").addEventListener("input", function () { applyLine(this.value); });
+
+    document.getElementById("reset-btn").addEventListener("click", function () {
+      applyFont("'Nunito Sans', sans-serif");
+      applySize(100);
+      applyLine(1.8);
+      setTheme('light');
+      setLanguage('vi');
+
+      document.getElementById("font-selector").value = "'Nunito Sans', sans-serif";
+      document.getElementById("font-size-range").value = 100;
+      document.getElementById("line-height-range").value = 1.8;
+    });
   });
 
-  document.addEventListener("click", (e) => {
-    if (!panel.contains(e.target) && e.target !== toggleBtn) {
-      panel.classList.remove("show");
-    }
-  });
+  // ÁP DỤNG TOÀN TRANG - IMPROVED VERSION
 
-  // Load Preferences
-  const savedFont = localStorage.getItem("reader_font");
-  const savedSize = localStorage.getItem("reader_size");
-  const savedLine = localStorage.getItem("reader_line");
-  const savedTheme = localStorage.getItem("reader_theme");
+  function applyFont(font) {
+    // Áp dụng cho CSS variable để toàn bộ site kế thừa
+    document.documentElement.style.setProperty('--reader-font-family', font);
+    document.body.style.setProperty('font-family', font, 'important');
 
-  if(savedFont) applyFont(savedFont);
-  if(savedSize) applySize(savedSize);
-  if(savedLine) applyLine(savedLine);
-  if(savedTheme) setTheme(savedTheme);
-
-  // Event Listeners
-  document.getElementById("font-selector").addEventListener("change", function() { applyFont(this.value); });
-  document.getElementById("font-size-range").addEventListener("input", function() { applySize(this.value); });
-  document.getElementById("line-height-range").addEventListener("input", function() { applyLine(this.value); });
-
-  document.getElementById("reset-btn").addEventListener("click", function() {
-    applyFont("'Nunito Sans', sans-serif");
-    applySize(100);
-    applyLine(1.8);
-    setTheme('light');
-    
-    document.getElementById("font-selector").value = "'Nunito Sans', sans-serif";
-    document.getElementById("font-size-range").value = 100;
-    document.getElementById("line-height-range").value = 1.8;
-  });
-});
-
-// ÁP DỤNG TOÀN TRANG - IMPROVED VERSION
-
-function applyFont(font) {
-  // Áp dụng cho CSS variable để toàn bộ site kế thừa
-  document.documentElement.style.setProperty('--reader-font-family', font);
-  document.body.style.setProperty('font-family', font, 'important');
-  
-  document.getElementById("font-selector").value = font; 
-  localStorage.setItem("reader_font", font);
-}
-
-function applySize(size) {
-  // Sử dụng CSS variable để áp dụng toàn site
-  document.documentElement.style.setProperty('--reader-font-size', size + '%');
-  document.body.style.setProperty('font-size', size + '%', 'important');
-  
-  // Áp dụng cho tất cả text elements
-  const textElements = document.querySelectorAll('p, div, article, section, li, h1, h2, h3, h4, h5, h6, span, a, td, th, blockquote, pre, code');
-  textElements.forEach(el => {
-    if (!el.closest('.floating-settings')) { // Tránh áp dụng vào settings panel
-      el.style.fontSize = 'inherit';
-    }
-  });
-  
-  document.getElementById("font-size-val").innerText = size + "%";
-  document.getElementById("font-size-range").value = size;
-  localStorage.setItem("reader_size", size);
-}
-
-function applyLine(height) {
-  // Sử dụng CSS variable
-  document.documentElement.style.setProperty('--reader-line-height', height);
-  document.body.style.setProperty('line-height', height, 'important');
-  
-  // Áp dụng cho toàn bộ text elements
-  const textElements = document.querySelectorAll('p, div, article, section, li, h1, h2, h3, h4, h5, h6, span, a, td, th, blockquote, pre');
-  textElements.forEach(el => {
-    if (!el.closest('.floating-settings')) { // Tránh áp dụng vào settings panel
-      el.style.lineHeight = height;
-    }
-  });
-  
-  document.getElementById("line-height-val").innerText = height;
-  document.getElementById("line-height-range").value = height;
-  localStorage.setItem("reader_line", height);
-}
-
-function setTheme(theme) {
-  // Theme áp dụng toàn trang (body)
-  document.body.classList.remove("sepia-mode", "dark-mode");
-  document.querySelectorAll(".theme-btn").forEach(btn => btn.classList.remove("active"));
-  
-  if (theme === 'sepia') {
-    document.body.classList.add("sepia-mode");
-    const sepiaBtn = document.querySelector(".theme-btn.sepia");
-    if(sepiaBtn) sepiaBtn.classList.add("active");
-  } else if (theme === 'dark') {
-    document.body.classList.add("dark-mode");
-    const darkBtn = document.querySelector(".theme-btn.dark");
-    if(darkBtn) darkBtn.classList.add("active");
-  } else {
-    const lightBtn = document.querySelector(".theme-btn.light");
-    if(lightBtn) lightBtn.classList.add("active");
+    document.getElementById("font-selector").value = font;
+    localStorage.setItem("reader_font", font);
   }
-  
-  localStorage.setItem("reader_theme", theme);
-}
 
-// Hàm hỗ trợ nút +/-
-function adjustSize(amount) {
-  let current = parseInt(document.getElementById("font-size-range").value);
-  let newSize = current + amount;
-  if(newSize >= 80 && newSize <= 200) {
-    applySize(newSize);
+  function applySize(size) {
+    // Sử dụng CSS variable để áp dụng toàn site
+    document.documentElement.style.setProperty('--reader-font-size', size + '%');
+    document.body.style.setProperty('font-size', size + '%', 'important');
+
+    // Áp dụng cho tất cả text elements
+    const textElements = document.querySelectorAll('p, div, article, section, li, h1, h2, h3, h4, h5, h6, span, a, td, th, blockquote, pre, code');
+    textElements.forEach(el => {
+      if (!el.closest('.floating-settings')) { // Tránh áp dụng vào settings panel
+        el.style.fontSize = 'inherit';
+      }
+    });
+
+    document.getElementById("font-size-val").innerText = size + "%";
+    document.getElementById("font-size-range").value = size;
+    localStorage.setItem("reader_size", size);
   }
-}
+
+  function applyLine(height) {
+    // Sử dụng CSS variable
+    document.documentElement.style.setProperty('--reader-line-height', height);
+    document.body.style.setProperty('line-height', height, 'important');
+
+    // Áp dụng cho toàn bộ text elements
+    const textElements = document.querySelectorAll('p, div, article, section, li, h1, h2, h3, h4, h5, h6, span, a, td, th, blockquote, pre');
+    textElements.forEach(el => {
+      if (!el.closest('.floating-settings')) { // Tránh áp dụng vào settings panel
+        el.style.lineHeight = height;
+      }
+    });
+
+    document.getElementById("line-height-val").innerText = height;
+    document.getElementById("line-height-range").value = height;
+    localStorage.setItem("reader_line", height);
+  }
+
+  function setTheme(theme) {
+    // Theme áp dụng toàn trang (body)
+    document.body.classList.remove("sepia-mode", "dark-mode");
+    document.querySelectorAll(".theme-btn").forEach(btn => btn.classList.remove("active"));
+
+    if (theme === 'sepia') {
+      document.body.classList.add("sepia-mode");
+      const sepiaBtn = document.querySelector(".theme-btn.sepia");
+      if (sepiaBtn) sepiaBtn.classList.add("active");
+    } else if (theme === 'dark') {
+      document.body.classList.add("dark-mode");
+      const darkBtn = document.querySelector(".theme-btn.dark");
+      if (darkBtn) darkBtn.classList.add("active");
+    } else {
+      const lightBtn = document.querySelector(".theme-btn.light");
+      if (lightBtn) lightBtn.classList.add("active");
+    }
+
+    localStorage.setItem("reader_theme", theme);
+  }
+
+  function setLanguage(lang) {
+    // Remove all language classes
+    document.body.classList.remove("mode-lang-vi", "mode-lang-en", "mode-lang-bi");
+
+    // Add selected class
+    document.body.classList.add("mode-lang-" + lang);
+
+    // Update buttons
+    document.querySelectorAll(".lang-btn").forEach(btn => btn.classList.remove("active"));
+    const activeBtn = document.querySelector(`.lang-btn[data-lang="${lang}"]`);
+    if (activeBtn) activeBtn.classList.add("active");
+
+    localStorage.setItem("reader_lang", lang);
+  }
+
+  // Hàm hỗ trợ nút +/-
+  function adjustSize(amount) {
+    let current = parseInt(document.getElementById("font-size-range").value);
+    let newSize = current + amount;
+    if (newSize >= 80 && newSize <= 200) {
+      applySize(newSize);
+    }
+  }
 </script>
