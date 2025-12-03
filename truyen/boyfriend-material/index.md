@@ -22,7 +22,7 @@ genres: "Hài hước, Fake Dating, Oan gia ngõ hẹp"
 
 <div class="epub-layout">
     <div class="epub-cover">
-        <img src="./cover.jpg" alt="Boyfriend Material Cover" onerror="this.src='https://placehold.co/400x600/e74c3c/white?text=Boyfriend+Material'">
+        <img src="./cover-1.jpg" alt="Boyfriend Material Cover" onerror="this.src='https://placehold.co/400x600/e74c3c/white?text=Boyfriend+Material'">
         
         <a href="./chap-01" class="read-now-btn">📖 Đọc Ngay</a>
     </div>
