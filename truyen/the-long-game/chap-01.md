@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Chương 1
-description: "Kèo Late Căng Cực (The Long Game)"
+description: "Kèo Late Căng Cực"
 parent: The Long Game
 nav_order: 1
 ---
@@ -22,10 +22,10 @@ nav_order: 1
 <div class="chapter-content" style="line-height: 1.8; font-size: 1.1rem; color: #333; max-width: 800px; margin: 0 auto;">
 
 <p class="lang-vi" style="margin-bottom: 10px;"><strong>Tháng Bảy</strong></p>
-<p style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">July</p>
+<p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">July</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">Cả cuộc đời mình, chưa bao giờ Shane khao khát điều gì mãnh liệt đến thế. Mục tiêu đang ở ngay trước mắt, và sẽ chẳng gì có thể ngăn cản cậu chạm tay vào nó.</p>
-<p style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane had never wanted anything so badly in his life. His goal was right in front of him, and nothing would stop him from reaching it.</p>
+<p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane had never wanted anything so badly in his life. His goal was right in front of him, and nothing would stop him from reaching it.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Mơ đi cưng, Hollander," một giọng nói khàn khàn vang lên từ phía sau.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“You wish, Hollander,” called a hoarse voice behind him.</p>
@@ -33,19 +33,19 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">Shane cảm tưởng như lồng ngực mình sắp nổ tung đến nơi, nhưng cậu vẫn hừ mạnh một tiếng và ép bản thân chạy nhanh hơn, nhất quyết không bỏ cuộc. Tiếng giày thể thao nện thình thịch xuống mặt đường mòn hòa cùng nhịp tim dồn dập của Shane suýt chút nữa thì át cả tiếng cười cợt nhả sau lưng. Shane cố lờ tịt đi, dồn hết sự tập trung vào lối ra của đường chạy ngay phía trước.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane felt like his chest was going to explode, but he huffed and pushed himself harder, refusing to give up. The pounding of sneakers on the trail and of Shane’s own heartbeat almost drowned out the laughter behind him. Shane tried to ignore it all as he focused on the trail exit just ahead.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Đột nhiên, Ilya đã ở ngay bên cạnh cậu, người ướt đẫm mồ hôi, cái áo phông bị vo tròn nắm trong một tay. Hắn nháy mắt với Shane một cái rồi phóng vụt qua người cậu nhẹ hều như mấy nhân vật hoạt hình. Shane gầm gừ đầy ức chế, cố rướn người đuổi theo, nhưng đôi chân dài ngoằng cùng cái thể lực trâu bò như siêu nhân của Ilya khiến chuyện đó trở nên bất khả thi.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Đột nhiên, Ilya đã ở ngay bên cạnh cậu, người ướt đẫm mồ hôi, cái áo phông bị vo tròn nắm trong một tay. Anh nháy mắt với Shane một cái rồi phóng vụt qua người cậu nhẹ hều như mấy nhân vật hoạt hình. Shane gầm gừ đầy ức chế, cố rướn người đuổi theo, nhưng đôi chân dài ngoằng cùng cái thể lực trâu bò như siêu nhân của Ilya khiến chuyện đó trở nên bất khả thi.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Suddenly, Ilya was right beside him, drenched in sweat, T-shirt balled up in one fist. Ilya winked at him before speeding past him like a cartoon character. Shane grunted in frustration and tried to catch up, but Ilya’s long legs and seemingly superhuman stamina were making it impossible.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Ilya cán đích đầu tiên, hai tay giơ cao đầy vẻ chiến thắng. Rồi hắn thả người nằm vật xuống bãi cỏ ngay mép khu đỗ xe nhỏ.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Ilya cán đích đầu tiên, hai tay giơ cao đầy vẻ chiến thắng. Rồi anh thả người nằm vật xuống bãi cỏ ngay mép khu đỗ xe nhỏ.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Ilya reached the end of the trail first, arms raised in victory. Then he collapsed on a grassy patch at the edge of the small parking lot.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Shane loạng choạng bước tới chỗ hắn, vừa thở hắt ra vừa chửi thề. Cậu chống hai tay lên đầu gối, chờ cho từng nhịp thở thôi đau đớn như xé phổi.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Shane loạng choạng bước tới chỗ anh, vừa thở hắt ra vừa chửi thề. Cậu chống hai tay lên đầu gối, chờ cho từng nhịp thở thôi đau đớn như xé phổi.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane stumbled over to him, gasping and swearing. He put his hands on his knees as he waited for breathing to stop being painful.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Mẹ kiếp," cậu rít lên qua kẽ răng, "anh."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“Fuck,” he wheezed, “you.”</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Ilya nằm ngửa ra đất, người rung lên bần bật vì cười. Hắn lấy cái áo ướt đẫm đang cầm trên tay lau mồ hôi trán. "Anh xém chút nữa là nhường em thắng rồi đấy."</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Ilya nằm ngửa ra đất, người rung lên bần bật vì cười. Anh lấy cái áo ướt đẫm đang cầm trên tay lau mồ hôi trán. "Anh xém chút nữa là nhường em thắng rồi đấy."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Ilya flopped onto his back, shaking with laughter. He mopped at his forehead with the damp shirt he was holding. “I almost let you win.”</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Đồ xạo ke."</p>
@@ -63,7 +63,7 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">Shane bật cười, nhưng nghe tiếng cười giống tiếng đầu máy hơi nước đang xả khói hơn. "Cảm ơn."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane laughed, but it sounded more like a steam engine puffing. “Thanks.”</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Ilya chống khuỷu tay nhổm người dậy. Hắn nhắm mắt, ngửa đầu ra sau rồi lắc lư nhẹ nhàng qua lại. Tóc hắn ướt nhẹp, mấy lọn tóc xoăn bết dính vào mặt và cổ, còn lồng ngực trần thì bóng loáng mồ hôi. Chiếc thánh giá hắn luôn đeo trên cổ giờ trượt xuống, nằm nghỉ trên bờ vai rắn chắc.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Ilya chống khuỷu tay nhổm người dậy. Anh nhắm mắt, ngửa đầu ra sau rồi lắc lư nhẹ nhàng qua lại. Tóc anh ướt nhẹp, mấy lọn tóc xoăn bết dính vào mặt và cổ, còn lồng ngực trần thì bóng loáng mồ hôi. Chiếc thánh giá anh luôn đeo trên cổ giờ trượt xuống, nằm nghỉ trên bờ vai rắn chắc.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Ilya pulled himself up to rest on his elbows. He closed his eyes and tilted his head back, rolling it gently from side to side. His hair was soaked, curls sticking to his face and neck, and his chest glistened with sweat. The crucifix he always wore around his neck was resting on his shoulder.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">Shane quỳ gối xuống bên cạnh. "Em ghét cái kiểu anh có thể chạy vượt mặt em như thế. Vô lý đùng đùng."</p>
@@ -96,13 +96,13 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">Ilya đưa tay búng nhẹ lên chóp mũi Shane. "Mũi xinh."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Ilya booped the tip of Shane’s nose. “A cute one.”</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Shane cố trừng mắt nhìn hắn, nhưng chẳng gồng được bao lâu. Không phải khi Ilya đang cười với cậu bằng cái điệu bộ đó. Thay vào đó, cậu nhẹ nhàng chỉnh lại sợi dây chuyền cho Ilya, đặt mặt thánh giá nằm ngay ngắn giữa lồng ngực hắn.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Shane cố trừng mắt nhìn anh, nhưng chẳng gồng được bao lâu. Không phải khi Ilya đang cười với cậu bằng cái điệu bộ đó. Thay vào đó, cậu nhẹ nhàng chỉnh lại sợi dây chuyền cho Ilya, đặt mặt thánh giá nằm ngay ngắn giữa lồng ngực anh.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane tried to glare at him, but he couldn’t keep it up. Not when Ilya was smiling at him like that. Instead, he gently adjusted Ilya’s crucifix, moving it to rest in the middle of his chest.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Vậy... anh thích cái quần short này hả?"</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“So you like the shorts, huh?”</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Đây là kiểu quần ngắn hơn nhiều so với mấy cái quần bóng rổ cậu thường mặc đi tập. Một phong cách mới mà Shane đang muốn thử nghiệm. Tóc cậu cũng dài hơn bao giờ hết. Cậu đã nuôi tóc suốt mùa giải playoffs, và khi Shane định đi cắt thì Ilya lại giãy nảy lên phản đối. Nhưng bù lại, hắn cũng chịu để cho Shane cạo sạch cái bộ râu lởm chởm, thảm hại hồi playoffs của mình.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Đây là kiểu quần ngắn hơn nhiều so với mấy cái quần bóng rổ cậu thường mặc đi tập. Một phong cách mới mà Shane đang muốn thử nghiệm. Tóc cậu cũng dài hơn bao giờ hết. Cậu đã nuôi tóc suốt mùa giải playoffs, và khi Shane định đi cắt thì Ilya lại giãy nảy lên phản đối. Nhưng bù lại, anh cũng chịu để cho Shane cạo sạch cái bộ râu lởm chởm, thảm hại hồi playoffs của mình.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">They were a shorter style than the basketball ones he usually wore to work out in. Something new Shane was trying. His hair was longer than it had ever been too. He’d grown it out during the playoffs, and Ilya had protested when Shane had suggested it was time to get it cut. He’d let Shane shave his terrible, patchy excuse for a playoff beard, though.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">Ilya đưa tay miết nhẹ theo đường viền ống quần nơi vải đang bó chặt lấy đùi Shane. "Anh nghĩ 'thằng nhỏ' của em mà 'chào cờ' thì chắc xé toạc cái quần này ra mất."</p>
@@ -114,7 +114,7 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">Chẳng báo trước tiếng nào, Ilya chồm tới, lật nhào cả hai đứa lại cho đến khi lưng Shane chạm đất, còn Ilya thì nằm dài đè lên trên, miệng cười nhăn nhở nhìn xuống cậu.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Without warning, Ilya grabbed him and rolled them both until Shane was on his back, Ilya stretched out on top of him, grinning down at him.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Shane đẩy mạnh vào lồng ngực đẫm mồ hôi của hắn. "Anh tởm vừa thôi."</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Shane đẩy mạnh vào lồng ngực đẫm mồ hôi của anh. "Anh tởm vừa thôi."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane shoved at his sweaty chest. “You’re disgusting.”</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Hai đứa mình cùng tởm." Ilya cúi xuống hôn chụt một cái lên môi cậu, nhanh gọn lẹ.</p>
@@ -126,7 +126,7 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">"Được rồi." Ilya bật dậy, rồi đưa một tay ra kéo Shane đứng lên.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“Fine.” Ilya sprang off of him, then offered a hand to help Shane up.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">"Sao anh cứ thừa năng lượng thế nhỉ," Shane lầm bầm, nắm lấy tay hắn để được kéo dậy.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">"Sao anh cứ thừa năng lượng thế nhỉ," Shane lầm bầm, nắm lấy tay anh để được kéo dậy.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“You’re just full of energy,” Shane grumbled, taking his hand and allowing himself to be hauled up.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Anh có thể nghĩ ra vài cách để 'xả' bớt năng lượng đấy," Ilya nói.</p>
@@ -141,7 +141,7 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">"Vì chị ấy là người đại diện, và việc của chị ấy là, kiểu như, kiểm tra tình hình thân chủ."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“Because she’s our agent and it’s her job to, like, check in on us.”</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Ilya đã ký hợp đồng với người đại diện của Shane vào năm ngoái, sau khi đường ai nấy đi với gã đại diện người Nga hắn theo từ hồi tuổi teen. Hắn muốn tìm một người đại diện Canada, và Shane thì không tiếc lời khen ngợi Farah Jalali. Ngoài việc là một agent cực giỏi, chị ấy còn luôn ủng hộ Shane hết mình khi cậu come out là gay hai năm trước.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Ilya đã ký hợp đồng với người đại diện của Shane vào năm ngoái, sau khi đường ai nấy đi với gã đại diện người Nga anh theo từ hồi tuổi teen. Anh muốn tìm một người đại diện Canada, và Shane thì không tiếc lời khen ngợi Farah Jalali. Ngoài việc là một agent cực giỏi, chị ấy còn luôn ủng hộ Shane hết mình khi cậu come out là gay hai năm trước.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Ilya had signed with Shane’s agent last year, after parting ways with the Russian agent he’d had since he’d been a teenager. He’d wanted a Canadian agent, and Shane couldn’t recommend Farah Jalali highly enough. On top of being a great agent, she’d been nothing but supportive when Shane had told her he was gay two years ago.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Hay là mình nói với bả luôn đi," Ilya nói.</p>
@@ -162,7 +162,7 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">Cái còi báo động lo âu thường trực trong đầu Shane bắt đầu hú inh ỏi. "Sao chị ấy biết được?"</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">The panic alarm that lived inside Shane started blaring. “Why would she?”</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">"Mình đang ở cùng nhau tại nhà em. Em thì gay. Anh thì ngon."</p>
+<p class="lang-vi" style="margin-bottom: 10px;">"Mình đang ở cùng nhau tại nhà em. Em thì gay. Anh thì ngon trai."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“We are together at your cottage. You are gay. I am hot.”</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Hơi... gấp gáp quá. Mình nên bàn thêm về chuyện này đã. Phải tính xem nói thế nào và—"</p>
@@ -263,7 +263,7 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">"Rất nghiêm túc," Ilya khẳng định.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“Very,” Ilya said.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Tim Shane lại hẫng một nhịp như mọi khi Ilya thể hiện rõ ràng rằng Shane quan trọng với hắn đến nhường nào.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Tim Shane lại hẫng một nhịp như mọi khi Ilya thể hiện rõ ràng rằng Shane quan trọng với anh đến nhường nào.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane’s heart flipped the way it always did when Ilya made it clear how much Shane meant to him.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">"Hai đứa có muốn công khai không?" Farah hỏi.</p>
@@ -317,18 +317,16 @@ nav_order: 1
 <p class="lang-vi" style="margin-bottom: 10px;">Có lẽ một ngày nào đó. Sau khi cả hai đã giải nghệ. Shane biết vài ngôi sao NHL đã giải nghệ và dễ dàng chìm vào quên lãng nếu họ muốn. Thậm chí đôi khi dù họ không muốn thì thế giới cũng tự động ngừng quan tâm đến họ thôi.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Maybe one day. After they were both retired. Shane knew some retired NHL stars and they’d been able to easily fade into the background if they’d wanted to. Sometimes even if they didn’t want to. Eventually, the world just stopped caring about them.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Hiện tại, cả Shane và Ilya đều đang ở đỉnh cao phong độ ở tuổi hai mươi chín. Shane vừa dẫn dắt đội mình giành Cúp Stanley lần thứ ba, và dù Ilya là đội trưởng của một đội yếu hơn nhiều, hắn vẫn đang cày ra những chỉ số khủng ở Ottawa. Cả hai đều là siêu sao, và sự nghiệp vẫn còn dài phía trước. Shane dự định chơi thêm ít nhất một thập kỷ nữa, và cậu tin Ilya cũng thế.</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Hiện tại, cả Shane và Ilya đều đang ở đỉnh cao phong độ ở tuổi hai mươi chín. Shane vừa dẫn dắt đội mình giành Cúp Stanley lần thứ ba, và dù Ilya là đội trưởng của một đội yếu hơn nhiều, anh vẫn đang cày ra những chỉ số khủng ở Ottawa. Cả hai đều là siêu sao, và sự nghiệp vẫn còn dài phía trước. Shane dự định chơi thêm ít nhất một thập kỷ nữa, và cậu tin Ilya cũng thế.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">At the moment, Shane and Ilya were both in their prime at twenty-nine years old. Shane had just led his team to his third Stanley Cup victory, and while Ilya was the captain of a much worse team, he was still putting up big numbers in Ottawa. They were both superstars, and they both had a lot of hockey left in them. Shane had every intention of playing another decade at least, and he expected Ilya to do the same.</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">Điều đó đồng nghĩa với việc phải trốn chui trốn lủi thêm một thập kỷ nữa. Nhưng Shane sẽ làm. Cậu sẽ làm bất cứ điều gì vì Ilya.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Which meant another decade of hiding, probably. But Shane would do it. He would do anything for Ilya. He’d told him, once, that he was willing to play the long game when it came to their relationship and he’d meant it.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Cậu từng nói với hắn, một lần rồi, rằng cậu sẵn sàng chơi một "ván đấu dài hơi" (long game) đối với mối quan hệ của họ, và cậu thực sự nghiêm túc về điều đó.</p>
-
 <p class="lang-vi" style="margin-bottom: 10px;">"Sao tự nhiên buồn hiu vậy?" Ilya hỏi.</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">“Why are you getting sad?” Ilya asked.</p>
 
-<p class="lang-vi" style="margin-bottom: 10px;">Shane chớp mắt nhìn hắn. "Xin lỗi. Không có gì." Cậu hôn nhanh lên môi hắn. "Em yêu anh."</p>
+<p class="lang-vi" style="margin-bottom: 10px;">Shane chớp mắt nhìn anh. "Xin lỗi. Không có gì." Cậu hôn nhanh lên môi anh. "Em yêu anh."</p>
 <p class="lang-en" style="margin-bottom: 2rem; color: #888; font-style: italic; font-size: 1rem;">Shane blinked at him. “Sorry. Nothing.” He kissed him quickly. “I love you.”</p>
 
 <p class="lang-vi" style="margin-bottom: 10px;">Ilya nở nụ cười nhếch mép, xiêu lòng đặc trưng của mình. "Dĩ nhiên rồi. Sao mà không yêu cho được?"</p>
@@ -337,10 +335,10 @@ nav_order: 1
 </div>
 
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; margin-top: 3rem; border-top: 2px solid #eee;">
-  <a href="./" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    ← Mục Lục
+  <a href="{{ site.baseurl }}/" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    ← Trang Chủ
   </a>
   <a href="./chap-02" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    Chương tiếp →
+    Chương 2 →
   </a>
 </nav>
