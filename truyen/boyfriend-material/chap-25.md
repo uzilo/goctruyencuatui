@@ -735,8 +735,8 @@ Lúc này tôi đang rất bối rối, hoặc có lẽ là không. Có thể t�
 </div>
 
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; margin-top: 3rem; border-top: 2px solid #eee;">
-  <a href="./" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    ← Mục Lục
+  <a href="./chap-24" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    ← Chương trước
   </a>
   <a href="./chap-26" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
     Chương tiếp →

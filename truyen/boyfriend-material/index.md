@@ -2,11 +2,11 @@
 layout: default
 title: Boyfriend Material
 nav_order: 3
-tags: [MM Romance, Comedy, DangRa]
+tags: [MM Romance, Comedy, HoanThanh]
 
 # --- DỮ LIỆU CHO TRANG CHỦ ---
 type: story
-last_updated: 2025-12-03 16:30
+last_updated: 2025-12-03 18:00
 author: Alexis Hall
 summary: "Luc (con trai huyền thoại rock, chuyên gặp rắc rối) cần tuyển gấp bạn trai FAKE để cứu vãn hình tượng. Đối tượng: Oliver (luật sư, ăn chay, hoàn hảo đến mức đáng ghét)."
 cover_image: /truyen/boyfriend-material/cover.jpg
@@ -16,13 +16,13 @@ genres: "Hài hước, Fake Dating, Oan gia ngõ hẹp"
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">
   <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
-  <a href="{{ site.baseurl }}/tags/#dang-ra" style="text-decoration:none; color:#888;">Truyện Đang Ra</a> / 
+  <a href="{{ site.baseurl }}/tags/#hoan-thanh" style="text-decoration:none; color:#888;">Truyện Hoàn Thành</a> / 
   <span style="color:#159957;">Chi tiết sách</span>
 </div>
 
 <div class="epub-layout">
     <div class="epub-cover">
-        <img src="./cover-1.jpg" alt="Boyfriend Material Cover" onerror="this.src='https://placehold.co/400x600/e74c3c/white?text=Boyfriend+Material'">
+        <img src="./cover.jpg" alt="Boyfriend Material Cover" onerror="this.src='https://placehold.co/400x600/e74c3c/white?text=Boyfriend+Material'">
         
         <a href="./chap-01" class="read-now-btn">📖 Đọc Ngay</a>
     </div>
@@ -31,7 +31,7 @@ genres: "Hài hước, Fake Dating, Oan gia ngõ hẹp"
         <h1 class="epub-title">Boyfriend Material</h1>
         
         <div class="epub-meta">
-            by <strong>Alexis Hall</strong> • Cập nhật: 03/12/2025
+            by <strong>Alexis Hall</strong> • Trạng thái: <span style="color: #e74c3c; font-weight: bold;">Đã Hoàn Thành</span>
         </div>
 
         <div class="epub-rating">
@@ -50,7 +50,7 @@ genres: "Hài hước, Fake Dating, Oan gia ngõ hẹp"
 
 <div class="tab-container">
     <button class="tab-btn active" onclick="openTab('details', this)">Giới Thiệu</button>
-    <button class="tab-btn" onclick="openTab('toc', this)">Mục Lục (20 Chương)</button>
+    <button class="tab-btn" onclick="openTab('toc', this)">Mục Lục (Full 26 Chương)</button>
 </div>
 
 <div id="tab-content-details" class="tab-content" style="display: block;">
@@ -97,6 +97,7 @@ genres: "Hài hước, Fake Dating, Oan gia ngõ hẹp"
                 Chương 5: Câu Chuyện Cười Nhạt Nhẽo & Cuộc Gặp Gỡ Bất Ngờ
             </a>
         </li>
+
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-06" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
                 Chương 6: Lời Thú Nhận & Bữa Tối Tại Nhà Oliver
@@ -130,17 +131,44 @@ genres: "Hài hước, Fake Dating, Oan gia ngõ hẹp"
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-19" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 19: Bữa Tiệc Sinh Nhật Hỗn Loạn & Đêm Đầu Tiên <span style="float: right; color: #e74c3c; font-size: 0.8rem; border: 1px solid #e74c3c; padding: 2px 6px; border-radius: 4px;">Mới</span>
+                Chương 19: Bữa Tiệc Sinh Nhật Hỗn Loạn & Đêm Đầu Tiên
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-20" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 20: Buổi Sáng Sau Đêm Ấy & Cuộc Gọi Từ Jon Fleming <span style="float: right; color: #e74c3c; font-size: 0.8rem; border: 1px solid #e74c3c; padding: 2px 6px; border-radius: 4px;">Mới</span>
+                Chương 20: Buổi Sáng Sau Đêm Ấy & Cuộc Gọi Từ Jon Fleming
             </a>
         </li>
 
-        <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 21: (Sắp ra mắt) 🔒
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-21" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 21: Sự Kiện Gây Quỹ & Màn Trình Diễn Của Oliver
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-22" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 22: Trò Đùa Cốc Cốc & Bữa Tiệc Kỷ Niệm Sóng Gió
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-23" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 23: Đồng Minh Bất Đắc Dĩ & Màn Bảo Vệ Oliver
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-24" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 24: Cuộc Cãi Vã Trên Xe & Lời Chia Tay
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-25" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 25: Sự Thật Về Bố & Bài Báo Của Cameron
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-26" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 26: Cái Kết Viên Mãn & Tình Yêu Đích Thực <span style="float: right; color: #fff; background-color: #e74c3c; font-size: 0.8rem; padding: 2px 8px; border-radius: 4px;">HOÀN</span>
+            </a>
         </li>
     </ul>
 </div>
