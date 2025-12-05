@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Góc Truyện Của Tui</title>
+    <title>Admin Dashboard V3 - Góc Truyện Của Tui</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/slugify@1.6.6/slugify.min.js"></script>
     <style>
         .loading { opacity: 0.5; pointer-events: none; }
-        .blink { animation: blinker 1.5s linear infinite; }
-        @keyframes blinker { 50% { opacity: 0; } }
+        /* Hiệu ứng khi soi lỗi */
+        .para-item { transition: all 0.2s; cursor: pointer; }
+        .para-item:hover { background-color: #f3f4f6; }
+        .para-active { background-color: #dbeafe !important; border-color: #2563eb !important; transform: scale(1.01); }
+        .para-error { background-color: #fee2e2 !important; border-color: #dc2626 !important; }
+        /* Thanh cuộn đẹp */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
     </style>
 </head>
-<body class="bg-gray-100 min-h-screen p-6">
+<body class="bg-gray-100 min-h-screen p-4 md:p-6">
 
-    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-lg p-8">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-8">
         <div class="flex justify-between items-center mb-8 border-b pb-4">
-            <h1 class="text-3xl font-bold text-gray-800">👑 Admin Dashboard V2</h1>
+            <h1 class="text-3xl font-bold text-gray-800 flex items-center gap-2">
+                👑 Dashboard <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">V3.0</span>
+            </h1>
             <button onclick="logout()" class="text-sm text-red-500 hover:underline">Đăng xuất</button>
         </div>
 
         <div id="config-section" class="mb-6 hidden">
-            <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200 mb-4">
-                <p class="text-sm text-yellow-800">💡 Cần <strong>Personal Access Token</strong> (Quyền: <code>public_repo</code>).</p>
+            <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200 mb-4 text-sm">
+                💡 Cần <strong>Personal Access Token</strong> (Quyền: <code>public_repo</code>).
             </div>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <input type="text" id="gh-username" class="p-2 border rounded" placeholder="GitHub Username">
                 <input type="text" id="gh-repo" class="p-2 border rounded" placeholder="Repo Name">
                 <input type="password" id="gh-token" class="p-2 border rounded" placeholder="GitHub Token (ghp_...)">
@@ -33,10 +43,10 @@
         </div>
 
         <div id="editor-section" class="hidden">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4 bg-gray-50 p-4 rounded-lg">
                 <div>
-                    <label class="block text-sm font-bold mb-1">Thư mục truyện:</label>
-                    <select id="story-folder" class="w-full p-2 border rounded bg-gray-50">
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Thư mục truyện</label>
+                    <select id="story-folder" class="w-full p-2 border rounded bg-white">
                         <option value="boyfriend-material">Boyfriend Material</option>
                         <option value="the-long-game">The Long Game</option>
                         <option value="the-foxhole-court">The Foxhole Court</option>
@@ -45,55 +55,68 @@
                     </select>
                 </div>
                 <div>
-                    <label class="block text-sm font-bold mb-1">Tên truyện (Parent):</label>
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Tên truyện (Parent)</label>
                     <input type="text" id="story-parent" class="w-full p-2 border rounded" placeholder="Tên truyện...">
                 </div>
                 <div>
-                    <label class="block text-sm font-bold mb-1">Số Chương:</label>
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Số Chương</label>
                     <input type="number" id="chap-num" class="w-full p-2 border rounded" placeholder="1">
                 </div>
                 <div>
-                    <label class="block text-sm font-bold mb-1">Tên Chương:</label>
-                    <input type="text" id="chap-title" class="w-full p-2 border rounded" placeholder="Tiêu đề chương...">
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Tên Chương</label>
+                    <input type="text" id="chap-title" class="w-full p-2 border rounded" placeholder="Tiêu đề...">
                 </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between mb-4 gap-4">
+                <label class="inline-flex items-center cursor-pointer select-none bg-blue-50 px-4 py-2 rounded-lg border border-blue-200">
+                    <input type="checkbox" id="bilingual-mode" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 relative after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
+                    <span class="ml-3 text-sm font-bold text-gray-700">Chế độ Song Ngữ</span>
+                </label>
+
+                <button onclick="toggleChecker()" id="btn-checker" class="hidden md:inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-lg hover:bg-purple-200 border border-purple-200 font-bold transition">
+                    🔍 Soi Lỗi & Khớp Dòng
+                </button>
             </div>
 
             <div id="error-box" class="hidden mb-4 p-3 bg-red-100 text-red-800 border border-red-200 rounded text-sm font-semibold"></div>
-            
-            <div id="warning-star" class="hidden mb-4 p-3 bg-orange-100 text-orange-900 border border-orange-200 rounded text-sm">
-                ⚠️ <strong>Cảnh báo phân cách:</strong> Phát hiện ký tự <code>***</code> trong văn bản Tiếng Anh. Hãy đảm bảo bên Tiếng Việt cũng có dòng tương ứng (hoặc dòng trống) để không bị lệch đoạn văn!
+
+            <div id="checker-area" class="hidden mb-6 border-2 border-purple-200 rounded-xl overflow-hidden bg-purple-50">
+                <div class="p-3 bg-purple-100 border-b border-purple-200 flex justify-between items-center">
+                    <span class="font-bold text-purple-800">🧐 Chế độ kiểm tra khớp dòng</span>
+                    <button onclick="toggleChecker()" class="text-xs bg-white px-2 py-1 rounded border hover:bg-gray-100">Đóng</button>
+                </div>
+                <div class="grid grid-cols-2 h-[500px]">
+                    <div id="check-vi" class="overflow-y-auto p-4 border-r border-purple-200 space-y-2"></div>
+                    <div id="check-en" class="overflow-y-auto p-4 space-y-2"></div>
+                </div>
+                <div class="p-2 bg-purple-50 text-xs text-center text-gray-500 border-t border-purple-200">
+                    *Bấm vào một đoạn để highlight đoạn tương ứng bên kia
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" id="input-grid">
+                <div class="flex flex-col h-full">
                     <div class="flex justify-between mb-1 items-end">
                         <label class="font-bold text-blue-700">🇻🇳 Tiếng Việt</label>
-                        <span class="text-xs font-mono text-gray-500" id="count-vi">0 đoạn</span>
+                        <span class="text-xs font-mono text-gray-500 bg-gray-100 px-2 py-1 rounded" id="count-vi">0 đoạn</span>
                     </div>
-                    <textarea id="content-vi" class="w-full h-[500px] p-3 border border-blue-200 rounded text-sm font-mono focus:ring-2 focus:ring-blue-500 outline-none resize-none" 
-                    placeholder="Dán nội dung Tiếng Việt vào đây..." oninput="validateInputs()"></textarea>
+                    <textarea id="content-vi" class="w-full h-[500px] p-4 border border-gray-300 rounded-lg text-sm font-mono focus:ring-2 focus:ring-blue-500 outline-none resize-none shadow-sm" 
+                    placeholder="Dán nội dung Tiếng Việt vào đây..." oninput="handleInput()"></textarea>
                 </div>
                 
-                <div>
+                <div id="col-en" class="flex flex-col h-full">
                     <div class="flex justify-between mb-1 items-end">
                         <label class="font-bold text-red-700">🇺🇸 Tiếng Anh</label>
-                        <span class="text-xs font-mono text-gray-500" id="count-en">0 đoạn</span>
+                        <span class="text-xs font-mono text-gray-500 bg-gray-100 px-2 py-1 rounded" id="count-en">0 đoạn</span>
                     </div>
-                    <textarea id="content-en" class="w-full h-[500px] p-3 border border-red-200 rounded text-sm font-mono focus:ring-2 focus:ring-red-500 outline-none resize-none" 
-                    placeholder="Paste English text here..." oninput="validateInputs()"></textarea>
+                    <textarea id="content-en" class="w-full h-[500px] p-4 border border-gray-300 rounded-lg text-sm font-mono focus:ring-2 focus:ring-red-500 outline-none resize-none shadow-sm" 
+                    placeholder="Paste English text here..." oninput="handleInput()"></textarea>
                 </div>
             </div>
 
-            <div class="mb-4 flex items-center justify-between">
-                 <label class="inline-flex items-center cursor-pointer">
-                    <input type="checkbox" id="bilingual-mode" class="sr-only peer" checked disabled>
-                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-green-600 relative after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
-                    <span class="ml-3 text-sm font-medium text-gray-900">Chế độ Song Ngữ (Luôn Bật)</span>
-                </label>
-                <span id="status-match" class="text-sm font-bold text-gray-400">Chưa có nội dung</span>
-            </div>
-
-            <button id="btn-publish" onclick="publishChapter()" class="w-full bg-gray-400 text-white font-bold text-xl py-4 rounded-lg shadow transition transform active:scale-[0.99]" disabled>
+            <button id="btn-publish" onclick="publishChapter()" class="w-full bg-gray-400 text-white font-bold text-xl py-4 rounded-lg shadow-lg transition transform active:scale-[0.99] mt-4" disabled>
                 🚀 ĐĂNG CHƯƠNG LÊN GITHUB
             </button>
             <div id="status-msg" class="text-center mt-4 text-sm font-mono"></div>
@@ -101,17 +124,21 @@
     </div>
 
     <script>
-        const CONFIG_KEY = 'gh_admin_config';
+        const CONFIG_KEY = 'gh_admin_config_v3';
         let config = JSON.parse(localStorage.getItem(CONFIG_KEY)) || {};
 
-        // --- AUTH & CONFIG ---
+        // --- AUTH ---
         function checkAuth() {
+            const elConfig = document.getElementById('config-section');
+            const elEditor = document.getElementById('editor-section');
+            
             if (config.token && config.user && config.repo) {
-                document.getElementById('config-section').classList.add('hidden');
-                document.getElementById('editor-section').classList.remove('hidden');
+                elConfig.classList.add('hidden');
+                elEditor.classList.remove('hidden');
+                handleInput(); // Run validation on load
             } else {
-                document.getElementById('config-section').classList.remove('hidden');
-                document.getElementById('editor-section').classList.add('hidden');
+                elConfig.classList.remove('hidden');
+                elEditor.classList.add('hidden');
             }
         }
 
@@ -132,111 +159,190 @@
             }
         }
 
-        // --- CORE LOGIC: TÁCH ĐOẠN & KIỂM TRA ---
-        
-        // Hàm tách đoạn: Tách bằng xuống dòng (\n)
+        // --- HELPERS ---
         function splitParas(text) {
+            // Tách bằng xuống dòng, loại bỏ dòng trống
             return text.split(/\n+/).map(p => p.trim()).filter(p => p.length > 0);
         }
 
-        function validateInputs() {
+        // --- LOGIC CHÍNH ---
+        function handleInput() {
             const viVal = document.getElementById('content-vi').value;
             const enVal = document.getElementById('content-en').value;
-            const btn = document.getElementById('btn-publish');
-            const errBox = document.getElementById('error-box');
-            const warnStar = document.getElementById('warning-star');
-            const statusMatch = document.getElementById('status-match');
-
+            const isBilingual = document.getElementById('bilingual-mode').checked;
+            
             const parasVi = splitParas(viVal);
             const parasEn = splitParas(enVal);
-            const cVi = parasVi.length;
-            const cEn = parasEn.length;
+            
+            // Update đếm số
+            document.getElementById('count-vi').innerText = `${parasVi.length} đoạn`;
+            document.getElementById('count-en').innerText = `${parasEn.length} đoạn`;
 
-            // 1. Cập nhật số đếm
-            document.getElementById('count-vi').innerText = `${cVi} đoạn`;
-            document.getElementById('count-en').innerText = `${cEn} đoạn`;
+            // Validation
+            const btn = document.getElementById('btn-publish');
+            const errBox = document.getElementById('error-box');
+            const btnChecker = document.getElementById('btn-checker');
 
-            // 2. Kiểm tra lệch dòng
-            if (cVi !== cEn) {
-                const diff = Math.abs(cVi - cEn);
+            let isValid = false;
+            let errorMsg = "";
+
+            if (isBilingual) {
+                // Chế độ Song Ngữ: Bắt buộc 2 bên phải bằng nhau
+                btnChecker.classList.remove('hidden'); // Hiện nút soi lỗi
+                if (parasVi.length === 0 && parasEn.length === 0) {
+                    errorMsg = ""; // Chưa nhập gì
+                } else if (parasVi.length !== parasEn.length) {
+                    const diff = Math.abs(parasVi.length - parasEn.length);
+                    errorMsg = `⛔ <strong>LỆCH DÒNG:</strong> Việt (${parasVi.length}) ≠ Anh (${parasEn.length}). Lệch <b>${diff}</b> đoạn.`;
+                } else {
+                    isValid = true;
+                }
+            } else {
+                // Chế độ 1 Ngôn Ngữ
+                btnChecker.classList.add('hidden'); // Ẩn nút soi lỗi
+                if (parasVi.length > 0) isValid = true;
+            }
+
+            // UI Update
+            if (errorMsg) {
                 errBox.classList.remove('hidden');
-                errBox.innerHTML = `⛔ <strong>LỖI LỆCH DÒNG:</strong> Bên Tiếng Việt có <b>${cVi}</b> đoạn, bên Tiếng Anh có <b>${cEn}</b> đoạn. Lệch <b>${diff}</b> đoạn.<br>Hãy kiểm tra lại các dấu xuống dòng!`;
-                
+                errBox.innerHTML = errorMsg;
+                document.getElementById('count-vi').classList.add('text-red-600', 'font-bold');
+                document.getElementById('count-en').classList.add('text-red-600', 'font-bold');
+            } else {
+                errBox.classList.add('hidden');
+                document.getElementById('count-vi').classList.remove('text-red-600', 'font-bold');
+                document.getElementById('count-en').classList.remove('text-red-600', 'font-bold');
+            }
+
+            if (isValid) {
+                btn.disabled = false;
+                btn.classList.remove('bg-gray-400', 'cursor-not-allowed');
+                btn.classList.add('bg-green-600', 'hover:bg-green-700');
+            } else {
                 btn.disabled = true;
                 btn.classList.remove('bg-green-600', 'hover:bg-green-700');
                 btn.classList.add('bg-gray-400', 'cursor-not-allowed');
-                
-                document.getElementById('count-vi').classList.add('text-red-600');
-                document.getElementById('count-en').classList.add('text-red-600');
-                statusMatch.innerHTML = '<span class="text-red-600">❌ Chưa khớp</span>';
-            } else {
-                errBox.classList.add('hidden');
-                document.getElementById('count-vi').classList.remove('text-red-600');
-                document.getElementById('count-en').classList.remove('text-red-600');
-                
-                if (cVi > 0) {
-                    btn.disabled = false;
-                    btn.classList.remove('bg-gray-400', 'cursor-not-allowed');
-                    btn.classList.add('bg-green-600', 'hover:bg-green-700');
-                    statusMatch.innerHTML = '<span class="text-green-600">✅ Đã khớp</span>';
-                } else {
-                    statusMatch.innerText = "Chưa có nội dung";
-                }
-            }
-
-            // 3. Kiểm tra ký tự *** (Scene Break)
-            // Tìm các biến thể: ***, * * *, * * *, v.v.
-            const starRegex = /(\*\s*){3,}/; 
-            if (starRegex.test(enVal) || starRegex.test(viVal)) {
-                warnStar.classList.remove('hidden');
-            } else {
-                warnStar.classList.add('hidden');
             }
         }
 
-        function generateBodyHTML(viVal, enVal) {
+        // --- TÍNH NĂNG SOI LỖI ---
+        function toggleChecker() {
+            const area = document.getElementById('checker-area');
+            const isHidden = area.classList.contains('hidden');
+            
+            if (isHidden) {
+                area.classList.remove('hidden');
+                renderChecker();
+            } else {
+                area.classList.add('hidden');
+            }
+        }
+
+        function renderChecker() {
+            const vi = splitParas(document.getElementById('content-vi').value);
+            const en = splitParas(document.getElementById('content-en').value);
+            
+            const boxVi = document.getElementById('check-vi');
+            const boxEn = document.getElementById('check-en');
+            boxVi.innerHTML = "";
+            boxEn.innerHTML = "";
+
+            const max = Math.max(vi.length, en.length);
+
+            for (let i = 0; i < max; i++) {
+                // Tạo block tiếng Việt
+                const divVi = document.createElement('div');
+                divVi.className = `para-item p-2 rounded border text-xs ${!vi[i] ? 'para-error' : 'border-gray-200 bg-white'}`;
+                divVi.innerHTML = `<span class="font-bold text-blue-600 mr-1">${i+1}.</span> ${vi[i] ? vi[i].substring(0, 80) + '...' : '❌ (TRỐNG)'}`;
+                divVi.dataset.idx = i;
+                divVi.onclick = () => highlightPair(i);
+                boxVi.appendChild(divVi);
+
+                // Tạo block tiếng Anh
+                const divEn = document.createElement('div');
+                divEn.className = `para-item p-2 rounded border text-xs ${!en[i] ? 'para-error' : 'border-gray-200 bg-white'}`;
+                divEn.innerHTML = `<span class="font-bold text-red-600 mr-1">${i+1}.</span> ${en[i] ? en[i].substring(0, 80) + '...' : '❌ (TRỐNG)'}`;
+                divEn.dataset.idx = i;
+                divEn.onclick = () => highlightPair(i);
+                boxEn.appendChild(divEn);
+            }
+        }
+
+        function highlightPair(idx) {
+            // Xóa highlight cũ
+            document.querySelectorAll('.para-active').forEach(el => el.classList.remove('para-active'));
+            
+            // Thêm highlight mới
+            const v = document.querySelector(`#check-vi div[data-idx='${idx}']`);
+            const e = document.querySelector(`#check-en div[data-idx='${idx}']`);
+            
+            if(v) {
+                v.classList.add('para-active');
+                v.scrollIntoView({behavior: "smooth", block: "center"});
+            }
+            if(e) {
+                e.classList.add('para-active');
+                e.scrollIntoView({behavior: "smooth", block: "center"});
+            }
+        }
+
+        // --- PUBLISH ---
+        function generateBodyHTML(viVal, enVal, isBilingual) {
             const viP = splitParas(viVal);
+            
+            if (!isBilingual) {
+                // Chế độ 1 ngôn ngữ: Format đẹp chuẩn sách
+                return viP.map(p => {
+                    if (/^(\*\s*){3,}$/.test(p)) return `<p style="text-align: center; margin: 3rem 0; font-size: 1.5rem; color: #ccc;">* * *</p>`;
+                    return `<p style="margin-bottom: 1.5rem; text-indent: 2em;">${p}</p>`;
+                }).join('\n\n');
+            }
+
+            // Chế độ Song ngữ
             const enP = splitParas(enVal);
             let html = "";
             
             for (let i = 0; i < viP.length; i++) {
-                // Xử lý đặc biệt cho dòng phân cách ***
-                const isSeparator = /^(\*\s*){3,}$/.test(viP[i]) || /^(\*\s*){3,}$/.test(enP[i]);
+                const isSeparator = /^(\*\s*){3,}$/.test(viP[i]) || (enP[i] && /^(\*\s*){3,}$/.test(enP[i]));
                 
                 if (isSeparator) {
                     html += `<p style="text-align: center; margin: 3rem 0; font-size: 1.5rem; color: #ccc;">* * *</p>\n\n`;
                 } else {
                     html += `<p class="lang-vi">${viP[i]}</p>\n`;
-                    html += `<p class="lang-en">${enP[i]}</p>\n\n`;
+                    if (enP[i]) html += `<p class="lang-en">${enP[i]}</p>\n\n`;
                 }
             }
             return html;
         }
 
-        // --- PUBLISH ---
         async function publishChapter() {
             const btn = document.getElementById('btn-publish');
             const msg = document.getElementById('status-msg');
             
-            // Lấy dữ liệu
             const folder = document.getElementById('story-folder').value;
             const parent = document.getElementById('story-parent').value;
             const num = document.getElementById('chap-num').value;
             const title = document.getElementById('chap-title').value;
             const viVal = document.getElementById('content-vi').value;
             const enVal = document.getElementById('content-en').value;
+            const isBilingual = document.getElementById('bilingual-mode').checked;
 
             btn.innerText = "⏳ Đang xử lý...";
+            btn.classList.add('opacity-50');
             
             try {
-                const bodyHTML = generateBodyHTML(viVal, enVal);
+                const bodyHTML = generateBodyHTML(viVal, enVal, isBilingual);
                 
-                // Tạo file path & content
                 const chapSlug = num.toString().padStart(2, '0');
                 const fileName = `chap-${chapSlug}.md`;
                 const path = `truyen/${folder}/${fileName}`;
                 const prev = (parseInt(num) - 1).toString().padStart(2, '0');
                 const next = (parseInt(num) + 1).toString().padStart(2, '0');
+
+                // Màu sắc theo truyện
+                let themeColor = "#2980b9"; // Mặc định xanh dương
+                if (folder.includes('boyfriend') || folder.includes('red-white')) themeColor = "#e74c3c"; // Đỏ cam
 
                 const fileContent = `---
 layout: default
@@ -249,7 +355,7 @@ nav_order: ${num}
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 30px;">
   <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
   <a href="./" style="text-decoration:none; color:#888;">${parent}</a> / 
-  <span style="color:#2980b9;">Chương ${num}</span>
+  <span style="color:${themeColor};">Chương ${num}</span>
 </div>
 
 <div style="text-align: center; margin-bottom: 40px;">
@@ -266,10 +372,10 @@ ${bodyHTML}
 </div>
 
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; margin-top: 3rem; border-top: 2px solid #eee;">
-  <a href="./chap-${prev}" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+  <a href="./chap-${prev}" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, ${themeColor} 0%, #2c3e50 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
     ← Chương trước
   </a>
-  <a href="./chap-${next}" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+  <a href="./chap-${next}" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, ${themeColor} 0%, #2c3e50 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
     Chương tiếp →
   </a>
 </nav>
@@ -278,7 +384,6 @@ ${bodyHTML}
                 const contentBase64 = btoa(unescape(encodeURIComponent(fileContent)));
                 const apiUrl = `https://api.github.com/repos/${config.user}/${config.repo}/contents/${path}`;
 
-                // Check SHA
                 let sha = null;
                 try {
                     const c = await fetch(apiUrl, { headers: { 'Authorization': `token ${config.token}` }});
@@ -292,19 +397,23 @@ ${bodyHTML}
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        message: `Dashboard: Up chương ${num}`,
+                        message: `Dashboard: Up chương ${num} [${isBilingual ? 'Song Ngữ' : 'Tiếng Việt'}]`,
                         content: contentBase64,
                         sha: sha
                     })
                 });
 
                 if(res.ok) {
-                    msg.innerHTML = `<span class="text-green-600 font-bold">✅ Đã xong!</span> File: ${fileName}`;
-                    // Reset
+                    msg.innerHTML = `<span class="text-green-600 font-bold text-lg">✅ Đã đăng thành công!</span><br><a href="https://github.com/${config.user}/${config.repo}/blob/master/${path}" target="_blank" class="underline text-blue-600">Xem file trên GitHub</a>`;
+                    
+                    // Tự động reset form
                     document.getElementById('content-vi').value = '';
                     document.getElementById('content-en').value = '';
                     document.getElementById('chap-num').value = parseInt(num) + 1;
-                    validateInputs();
+                    
+                    // Ẩn checker nếu đang mở
+                    document.getElementById('checker-area').classList.add('hidden');
+                    handleInput();
                 } else {
                     const err = await res.json();
                     throw new Error(err.message);
@@ -315,10 +424,25 @@ ${bodyHTML}
                 msg.innerText = "❌ Lỗi: " + e.message;
             } finally {
                 btn.innerText = "🚀 ĐĂNG CHƯƠNG LÊN GITHUB";
+                btn.classList.remove('opacity-50');
             }
         }
 
-        // Auto fill
+        // --- SỰ KIỆN ---
+        document.getElementById('bilingual-mode').addEventListener('change', (e) => {
+            const colEn = document.getElementById('col-en');
+            if (e.target.checked) {
+                colEn.classList.remove('hidden');
+                document.getElementById('input-grid').classList.remove('grid-cols-1');
+                document.getElementById('input-grid').classList.add('md:grid-cols-2');
+            } else {
+                colEn.classList.add('hidden');
+                document.getElementById('input-grid').classList.add('grid-cols-1');
+                document.getElementById('input-grid').classList.remove('md:grid-cols-2');
+            }
+            handleInput();
+        });
+
         document.getElementById('story-folder').addEventListener('change', (e) => {
             const map = {
                 'boyfriend-material': 'Boyfriend Material',
@@ -330,6 +454,7 @@ ${bodyHTML}
             document.getElementById('story-parent').value = map[e.target.value] || "";
         });
 
+        // Init
         checkAuth();
     </script>
 </body>
