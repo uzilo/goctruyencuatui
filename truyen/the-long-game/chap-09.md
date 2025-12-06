@@ -28,7 +28,7 @@ nav_order: 9
 <p class="lang-vi">Anh với tay sang phía giường của Shane, nhưng tất nhiên là trống trơn. Anh đã không ngủ chung giường với Shane hai tuần rồi.</p>
 <p class="lang-en">He reached a hand out toward Shane’s side of the bed, but of course it was empty. He hadn’t shared a bed with Shane for two weeks.</p>
 
-<p class="lang-vi">Anh đưa tay lên ngực, đầu ngón tay mân mê chiếc thánh giá quanh cổ, tự trấn an mình bằng những đường gờ và cạnh quen thuộc của mặt dây chuyền vàng.</p>
+<p class="lang-vi">Anh đưa tay lên ngực, đầu ngón tay mân mê những đường gờ quen thuộc của chiếc thánh giá vàng.</p>
 <p class="lang-en">He brought his hand to his chest and traced the crucifix around his neck with one fingertip, soothing himself with the familiar bumps and edges of the gold cross.</p>
 
 <p class="lang-vi">Anh phải đi tập. Anh vẫn thấy mệt. Dạo này lúc nào anh cũng thấy mệt. Có thể là do anh đã hai mươi chín tuổi, độ tuổi trung niên trong giới khúc côn cầu. Hoặc do cái đội bóng thảm hại của anh vừa thua đậm năm - một tối qua. Có thể là do những giấc mơ bất an thường xuyên về mẹ. Hoặc có thể là do anh nhớ bạn trai.</p>
@@ -43,16 +43,16 @@ nav_order: 9
 <p class="lang-vi">*Mẹ cũng đâu có thế.*</p>
 <p class="lang-en">Neither did Mom.</p>
 
-<p class="lang-vi">Anh lết xác khỏi giường bất chấp mọi sự phản đối từ cơ thể và não bộ. Tối qua anh bị một hậu vệ New Jersey húc dập mặt vào thành băng, và sáng nay anh đang phải trả giá cho cú đó. Thêm một thứ nữa phải giải quyết.</p>
+<p class="lang-vi">Anh lết xác khỏi giường mặc kệ cơ thể lẫn đầu óc đang gào thét phản đối. Tối qua anh bị một hậu vệ New Jersey húc dập mặt vào thành băng, và sáng nay anh đang phải trả giá cho cú đó. Thêm một thứ nữa phải giải quyết.</p>
 <p class="lang-en">He hauled himself out of bed despite everything in his body and brain protesting. He’d gotten rocked into the boards last night by a New Jersey defenseman, and he was paying for it this morning. One more thing to deal with.</p>
 
-<p class="lang-vi">Anh nhớ cảm giác thức dậy cùng Shane. Anh nhớ những bữa sáng cùng nhau, dù bây giờ Shane chỉ toàn ăn mấy thứ "healthy" đến cực đoan. Anh nhớ việc pha cà phê cho Shane và đưa cho cậu trong chiếc cốc Ottawa Centaurs. Anh nhớ những lần tắm chung, và cả việc ngã nhào lại vào giường cùng nhau sau đó, ấm áp, ẩm ướt và không thể ngừng chạm vào nhau.</p>
+<p class="lang-vi">Anh nhớ những sáng thức dậy có Shane bên cạnh. Anh nhớ những bữa sáng cùng nhau, dù bây giờ Shane chỉ toàn ăn mấy thứ "healthy" đến cực đoan. Anh nhớ việc pha cà phê cho Shane và đưa cho cậu trong chiếc cốc Ottawa Centaurs. Anh nhớ những lần tắm chung, và cả việc ngã nhào lại vào giường cùng nhau sau đó, ấm áp, ẩm ướt và không thể ngừng chạm vào nhau.</p>
 <p class="lang-en">He missed waking up with Shane. He missed breakfast together, even though Shane only ate extremely healthy food now. He missed making Shane coffee and serving it to him in an Ottawa Centaurs mug. He missed showering together, and tumbling back into bed together after, warm and damp and unable to stop touching each other.</p>
 
 <p class="lang-vi">Anh gửi cho Shane một tin nhắn: *St. Louis thế nào?*</p>
 <p class="lang-en">He sent Shane a text. How is St. Louis?</p>
 
-<p class="lang-vi">Shane bắt đầu gõ trả lời ngay lập tức: *Mưa. Ottawa thế nào?*</p>
+<p class="lang-vi">Shane gõ tin nhắn trả lời ngay tắp lự: *Mưa. Ottawa thế nào?*</p>
 <p class="lang-en">Shane began typing his reply right away. Raining. How’s Ottawa?</p>
 
 <p class="lang-vi">Ilya nhìn ra cửa sổ bếp hướng về phía con sông sau nhà. Cây cối đang rực rỡ sắc lá thu, và mặt trời đang tỏa nắng.</p>
@@ -109,7 +109,7 @@ nav_order: 9
 <p class="lang-vi">Shane: *Đừng có đánh trống lảng. Ảnh của em đâu?*</p>
 <p class="lang-en">Shane: Stop stalling. Where’s my pic?</p>
 
-<p class="lang-vi">Ilya vẫn đang cởi trần, một khởi đầu tốt cho việc chụp selfie. Anh duỗi cánh tay cầm điện thoại ra và giơ lên cao một chút, check góc máy xuống dưới. Rồi anh kéo cạp quần nỉ xuống thấp cho đến khi gần như vi phạm tiêu chuẩn an toàn lao động. Anh móc một ngón cái vào cạp quần, kéo trễ xuống một tí nữa, và chụp.</p>
+<p class="lang-vi">Ilya vẫn đang cởi trần, một khởi đầu tốt cho việc chụp selfie. Anh duỗi cánh tay cầm điện thoại ra và giơ lên cao một chút, check góc máy xuống dưới. Rồi anh kéo cạp quần nỉ xuống thấp cho đến khi gần như thành nội dung 18+. Anh móc một ngón cái vào cạp quần, kéo trễ xuống một tí nữa, và chụp.</p>
 <p class="lang-en">Ilya was still shirtless, which was a good start for a selfie. He stretched the arm holding his phone out and raised it a bit, angling down. Then he shimmied the waistband of his sweatpants down until he was nearly exiting the safe-for-work zone. He tucked a thumb into the waistband, tugging down a bit, and snapped the pic.</p>
 
 <p class="lang-vi">*Wow*, Shane nhắn lại. *Ác đấy.*</p>
@@ -157,7 +157,7 @@ nav_order: 9
 <p class="lang-vi">Shane: *Không nha.*</p>
 <p class="lang-en">Shane: Nah.</p>
 
-<p class="lang-vi">Và *rồi*, chẳng báo trước tiếng nào, Shane gửi một tấm ảnh chụp đũng quần cậu, "thằng nhỏ" bán cương lộ rõ mồn một dưới lớp vải xám của quần lót boxer.</p>
+<p class="lang-vi">Và *rồi*, chẳng báo trước tiếng nào, Shane gửi một tấm ảnh chụp đũng quần cậu, "thằng nhỏ" đang ngóc đầu dậy lộ rõ mồn một dưới lớp vải xám của quần lót boxer.</p>
 <p class="lang-en">And then, with no warning, Shane sent a pic of his crotch, his semi-hard dick visible under the gray fabric of his boxer briefs.</p>
 
 <p class="lang-vi">Shane: *Nói chuyện sau nhé.*</p>
@@ -313,7 +313,7 @@ nav_order: 9
 <p class="lang-vi">"Tôi nghĩ là có." Má Shane nóng lên. "Tụi tôi chưa nói chuyện đó nghiêm túc lắm. Giờ cũng chưa phải lúc."</p>
 <p class="lang-en">“I think so.” Shane’s cheeks heated. “We haven’t talked about it too seriously. There’s not much point right now.”</p>
 
-<p class="lang-vi">Trên tivi, một thanh niên say bí tỉ bắt đầu hôn hít một cô nàng cũng say bí tỉ không kém. Shane để mắt mình mất tiêu cự hơn cả bình thường khi không đeo kính, và âm thầm bắt đầu lo lắng về khâu hậu cần của việc nhận nuôi con cùng Ilya. Có quá nhiều thứ phải xảy ra trước đó, và tất cả đều đáng sợ.</p>
+<p class="lang-vi">Trên tivi, một thanh niên say bí tỉ bắt đầu hôn hít một cô nàng cũng say bí tỉ không kém. Shane để mắt mình dại đi/nhòe đi hơn cả bình thường khi không đeo kính, và âm thầm bắt đầu lo lắng về khâu hậu cần của việc nhận nuôi con cùng Ilya. Có quá nhiều thứ phải xảy ra trước đó, và tất cả đều đáng sợ.</p>
 <p class="lang-en">On the television, a very drunk young man started making out with a very drunk young woman. Shane let his eyes unfocus even more than they already were without his glasses, and quietly began to stress out about the logistics of adopting children with Ilya. There were so many things that had to happen first, and they were all terrifying.</p>
 
 <p class="lang-vi">"Cậu ta chắc sẽ là một ông bố tốt đấy," Hayden nói, cắt ngang vòng xoáy lo âu của Shane.</p>
@@ -511,7 +511,7 @@ nav_order: 9
 <p class="lang-vi">"Vãi đạn!" Bood hét lên khi lao sầm vào Ilya ở góc sân, ôm chầm lấy anh. Ilya đã ghi bàn sớm trong hiệp một, nâng tỷ số lên 1–0 cho Ottawa. Còi báo bàn thắng vang lên, những người hâm mộ hiếm hoi chịu đến sân hò reo, và bài hát mừng bàn thắng của đội bắt đầu phát (bài "All I Do Is Win" của DJ Khaled, một lựa chọn nghe có vẻ đầy mỉa mai đối với Ilya).</p>
 <p class="lang-en">“Fuckin’ A!” Bood yelled as he slammed into Ilya in the corner, wrapping him in a hug. Ilya had scored early in the first period, making it 1–0 for Ottawa. The goal siren blared, the fans who’d bothered to show up cheered, and the team’s goal song started playing (DJ Khaled’s “All I Do Is Win,” which seemed like an ironic choice to Ilya).</p>
 
-<p class="lang-vi">"Tiếp theo đến lượt cậu đấy, cưng," Ilya nói, cố gắng bắt kịp năng lượng của Bood. Anh đập găng tay với người chơi cánh còn lại, Tanner Dillon, người mà nói thẳng ra là không đủ trình để chơi cùng dây với hai người họ. Ilya mơ về một ngày người chơi cánh phải của anh cũng mạnh như cánh trái. Có lẽ một ngày nào đó sẽ là Haas. Cậu nhóc có tiềm năng.</p>
+<p class="lang-vi">"Tiếp theo đến lượt cậu đấy, cưng," Ilya nói, cố gắng bắt kịp năng lượng của Bood. Anh đập găng tay với người chơi cánh còn lại, Tanner Dillon, cái gã nói trắng ra là chưa đủ trình để chơi cùng dây với hai người. Ilya mơ về một ngày người chơi cánh phải của anh cũng mạnh như cánh trái. Có lẽ một ngày nào đó sẽ là Haas. Cậu nhóc có tiềm năng.</p>
 <p class="lang-en">“Your turn next, baby,” Ilya said, trying to match Bood’s energy. He bumped gloves with their other winger, Tanner Dillon, who frankly wasn’t good enough to be on a line with either of them. Ilya dreamed of a day where his right wing linemate was as strong as his left. Maybe it would be Haas someday. He had potential.</p>
 
 <p class="lang-vi">Nhưng Ilya mệt mỏi vì chờ đợi rồi. Mệt mỏi vì thua cuộc. Anh muốn một ngôi sao cánh phải trong đội hình của mình **ngay bây giờ**.</p>
@@ -532,7 +532,7 @@ nav_order: 9
 <p class="lang-vi">"Tuyệt."</p>
 <p class="lang-en">“Cool.”</p>
 
-<p class="lang-vi">Pierce hừ mũi và lắc đầu. "Tôi đếch hiểu sao cậu lại ký hợp đồng với đội này luôn đấy."</p>
+<p class="lang-vi">Pierce hừ mũi và lắc đầu. "Tôi đếch hiểu sao cậu lại chui đầu vào cái đội này luôn đấy."</p>
 <p class="lang-en">Pierce huffed and shook his head. “I have no fucking idea why you signed with this team.”</p>
 
 <p class="lang-vi">"Chắc là tôi thích sự yên tĩnh."</p>

@@ -208,7 +208,7 @@ nav_order: 8
 <p class="lang-vi">"Không đâu," Ilya nói khẽ. "Nó hoàn hảo mà."</p>
 <p class="lang-en">“No,” Ilya said quietly. “It is perfect.”</p>
 
-<p class="lang-vi">Trong hiệp hai, Shane đón được một đường chuyền dài từ J.J., tạo ra một pha phản công chớp nhoáng. Shane lao vút qua khu vực phòng thủ của Boston, dùng tốc độ đáng kinh ngạc của mình để đảm bảo không ai đuổi kịp. Khi đến trước khung thành, cậu chuyển sang tay trái (backhand), và trong tích tắc trước khi thực hiện cú sút, Ilya nhận ra cậu đang làm gì. Shane để quả bóng nằm yên đó, giả vờ thực hiện cú trái tay và ép thủ môn phải di chuyển. Rồi, nhanh như chớp, Shane thực hiện một cú **vẩy cổ tay thuận** đưa bóng bay qua vai thủ môn.</p>
+<p class="lang-vi">Trong hiệp hai, Shane đón được một đường chuyền dài từ J.J., tạo ra một pha phản công chớp nhoáng. Shane lao vút qua khu vực phòng thủ của Boston, dùng tốc độ đáng kinh ngạc của mình để đảm bảo không ai đuổi kịp. Khi đến trước khung thành, cậu chuyển sang tay trái (backhand), và trong tích tắc trước khi thực hiện cú sút, Ilya nhận ra cậu đang làm gì. Shane để quả bóng nằm yên đó, giả vờ thực hiện cú trái tay và ép thủ môn phải di chuyển. Nhanh như chớp, Shane vẩy cổ tay, quất một cú thuận đưa bóng bay vút qua vai thủ môn.</p>
 <p class="lang-en">In the second period, Shane took a long pass from J.J. that resulted in a breakaway. Shane raced through the Boston zone, using his incredible speed to make sure no one caught him. When he reached the net, he switched to his backhand, and in the split second before he took the shot, Ilya realized what he was doing. Shane had left the puck where it was, faking the backhand shot and forcing the goalie to move. Then, lightning-fast, Shane fired a forehand wrist shot over the goalie’s shoulder.</p>
 
 <p class="lang-vi">Và rồi, Shane nháy mắt với camera. *Nháy mắt.* Và Ilya biết tỏng là cái nháy mắt đó dành cho mình.</p>
@@ -238,7 +238,7 @@ nav_order: 8
 <p class="lang-vi">"Cháu nên thấy vinh dự chứ," Yuna nói. "Đó là một sự tôn trọng đấy."</p>
 <p class="lang-en">“You should be honored,” Yuna said. “It’s a show of respect.”</p>
 
-<p class="lang-vi">"Đó là sự thể hiện của một tên trộm thì có."</p>
+<p class="lang-vi">"Thế là ăn cắp trắng trợn chứ tôn trọng cái gì."</p>
 <p class="lang-en">“Is a show of being a thief.”</p>
 
 <p class="lang-vi">"Cháu nghĩ bọn trẻ khắp thế giới không tập luyện chiêu đó chắc?" David hỏi. "Bác cá là một nửa cái giải NHL này đã tập rồi, nhưng chẳng ai làm được ngoài cháu và Shane cả."</p>
@@ -295,7 +295,7 @@ nav_order: 8
 <p class="lang-vi">Shane cắn môi, hài lòng với bản thân. Hài lòng vì cậu vẫn có thể khiến Ilya phản ứng như thế này, vẫn có thể làm anh bất ngờ, sau ngần ấy năm.</p>
 <p class="lang-en">Shane bit his lip, pleased with himself. Pleased that he could still make Ilya react like this, could still surprise him, after all these years.</p>
 
-<p class="lang-vi">"Em nghĩ em nên được thưởng," Shane nói, bằng tiếng Anh. "Vì đã hoàn thiện tuyệt chiêu đó."</p>
+<p class="lang-vi">"Em nghĩ em nên được thưởng chứ." Shane nói, bằng tiếng Anh. "Công em hoàn thiện tuyệt chiêu đó mà."</p>
 <p class="lang-en">“I think I should get a reward,” Shane said, in English. “For perfecting that move.”</p>
 
 <p class="lang-vi">"Hoàn thiện cái khỉ," Ilya hừ mũi. "Cũng tàm tạm thôi."</p>
@@ -577,7 +577,7 @@ nav_order: 8
 <p class="lang-vi">"Em yêu anh."</p>
 <p class="lang-en">“I love you.”</p>
 
-<p class="lang-vi">Biểu cảm của Ilya trở nên nghiêm túc, và trong một khoảnh khắc dạ dày Shane thắt lại như thể cậu mong đợi Ilya nói điều gì đó tồi tệ.</p>
+<p class="lang-vi">Mặt Ilya nghiêm lại. Trong thoáng chốc, ruột gan Shane quặn thắt, cứ ngỡ anh sắp nói ra điều gì kinh khủng lắm.</p>
 <p class="lang-en">Ilya’s expression turned serious, and for a moment Shane’s stomach clenched as if he expected Ilya to tell him something awful.</p>
 
 <p class="lang-vi">Nhưng tất cả những gì Ilya nói là: "Anh yêu em nhiều lắm, Shane."</p>

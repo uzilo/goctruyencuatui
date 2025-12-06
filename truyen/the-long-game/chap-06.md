@@ -147,7 +147,7 @@ nav_order: 6
 <p class="lang-vi">Shane không quay lại. "Còn sau em?"</p>
 <p class="lang-en">Shane didn’t turn around. “And after me?”</p>
 
-<p class="lang-vi">"Có câu trả lời nào sai cho câu hỏi này không?"</p>
+<p class="lang-vi">"Câu này trả lời sao cũng là sai hả?"</p>
 <p class="lang-en">“Is there a wrong answer to this question?”</p>
 
 <p class="lang-vi">Shane thở hắt ra, vai rũ xuống. "Không."</p>
@@ -213,7 +213,7 @@ nav_order: 6
 <p class="lang-vi">"Nghỉ đá hockey đi," Ilya thì thầm. "Nhắn cho họ cái tin. Bảo em nghỉ. Ở lại đây với anh."</p>
 <p class="lang-en">“You should quit hockey,” Ilya murmured. “Send them a text. Say you quit. Stay here with me.”</p>
 
-<p class="lang-vi">"Em sẽ không kết thúc sự nghiệp bằng tin nhắn đâu."</p>
+<p class="lang-vi">"Em sẽ không giải nghệ bằng tin nhắn đâu."</p>
 <p class="lang-en">“I’m not ending my career via text.”</p>
 
 <p class="lang-vi">"Thì gửi email."</p>

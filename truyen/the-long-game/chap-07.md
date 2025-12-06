@@ -169,7 +169,7 @@ nav_order: 7
 <p class="lang-vi">"Tương lai là đây chứ đâu," Bood tuyên bố to, vò mái tóc ngắn ướt đẫm mồ hôi của Luca. Cậu ta đưa cho Luca quả bóng ghi bàn và mọi người cùng hò reo.</p>
 <p class="lang-en">“The fucking future right here,” Bood announced loudly, ruffling Luca’s short, sweaty hair. He handed Luca the goal puck and everyone cheered.</p>
 
-<p class="lang-vi">Không phải lần đầu tiên, Ilya tự hỏi tại sao Bood không phải là đội trưởng. Cậu ta về cơ bản là giám đốc xã giao, đội trưởng đội cổ vũ, và cậu ta đã là một Centaur từ trận NHL đầu tiên sáu mùa giải trước.</p>
+<p class="lang-vi">Không phải lần đầu tiên, Ilya tự hỏi tại sao Bood không phải là đội trưởng. Cậu ta về cơ bản là giám đốc xã giao, đội trưởng đội cổ vũ, và cậu ta đã khoác áo Centaur từ trận NHL đầu tiên sáu mùa giải trước.</p>
 <p class="lang-en">Not for the first time, Ilya wondered why the hell Bood wasn’t the team captain. He was basically the team’s social director, head cheerleader, and he’d been a Centaur since his first NHL game six seasons ago.</p>
 
 <p class="lang-vi">Dạo này Ilya **làm đội trưởng như hạch**. Anh hiếm khi đi chơi với đồng đội, và cũng chẳng tìm hiểu mấy cầu thủ trẻ. Anh chỉ muốn xé phăng chữ C trên áo mình ra và đưa nó cho Bood ngay lập tức.</p>
@@ -184,7 +184,7 @@ nav_order: 7
 <p class="lang-vi">Chủ yếu phóng viên muốn nói chuyện với Luca, điều này làm anh nhẹ cả người. Khi họ rời khỏi chỗ Ilya, anh vui vẻ cởi cái áo đẫm mồ hôi ra và ném vào giỏ đồ giặt.</p>
 <p class="lang-en">Mostly the reporters wanted to talk to Luca, which was a relief. Once they’d left Ilya, he happily pulled his sweat-soaked shirt off and tossed it into one of the laundry hampers.</p>
 
-<p class="lang-vi">"Hế lô người anh em," một giọng nói vui vẻ vang lên.</p>
+<p class="lang-vi">"Hế lô đằng ấy," một giọng nói vui vẻ vang lên.</p>
 <p class="lang-en">“Howdy,” said a cheerful voice.</p>
 
 <p class="lang-vi">"Harris," Ilya nói, nhận ra quản lý truyền thông xã hội của đội. "Cậu cần ảnh tôi cởi trần cho Instagram à?"</p>
@@ -238,7 +238,7 @@ nav_order: 7
 <p class="lang-vi">Má Luca ửng hồng, khiến cậu trông càng trẻ con hơn. "Thật ạ?"</p>
 <p class="lang-en">Luca’s cheeks pinked, making him look even younger than he was. “Really?”</p>
 
-<p class="lang-vi">"Ừ. Vì nó là sự khởi đầu, em biết không? Sớm thôi em sẽ có một phòng đầy cúp và bóng NHL, nhưng—" Ilya cầm quả bóng lên "—tất cả đều bắt đầu từ cái này."</p>
+<p class="lang-vi">"Ừ. Vì nó là sự khởi đầu, em biết không? Chẳng mấy chốc nữa em sẽ có một phòng đầy cúp và bóng NHL, nhưng—" Ilya cầm quả bóng lên "—tất cả đều bắt đầu từ cái này."</p>
 <p class="lang-en">“Yes. Because it was the beginning, you know? Soon you will have a room full of NHL pucks and trophies, but—” Ilya picked up the puck “—it all started with this one.”</p>
 
 <p class="lang-vi">Luca cúi đầu. "Em ước gì mình thắng trận này."</p>
