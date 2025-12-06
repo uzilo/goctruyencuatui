@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Chương 10
-description: "GIAO DIỆN "HƯ HỎNG" VÀ ĐÔI MẮT HÌNH TRÁI TIM"
+description: "GIAO DIỆN HƯ HỎNG VÀ ĐÔI MẮT HÌNH TRÁI TIM"
 parent: The Long Game
 nav_order: 10
 ---

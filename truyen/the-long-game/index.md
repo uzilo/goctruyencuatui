@@ -60,15 +60,53 @@ tags: [MM Romance, Sport, Contemporary, Dangra]
                 Chương 1: Kèo Late Căng Cực <span style="float: right; color: #159957;">Đọc ngay ➔</span>
             </a>
         </li>
-        
-        <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 2: (Sắp ra mắt) 🔒
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-02" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 2: Cơn Ghen Của Gấu Nga <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-03" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 3: Khi Gay Bar Có Bán Pizza <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-04" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 4: Phòng Thay Đồ Và Những Kẻ Khờ Mộng Mơ <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-05" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 5: Đêm Của Những Kẻ Khát Cầu <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-06" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 6: Mùa Đông Đang Đến <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-07" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 7: Vương Triều Và Cái Chuồng Rỗng <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-08" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 8: Cù Lũ Và Cú Lừa <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-09" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 9: Bí Ngô Và Những Lời Xin Lỗi Phủ Đầu <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-10" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 10: Giao Diện "Hư Hỏng" Và Đôi Mắt Hình Trái Tim <span style="float: right; color: #159957;">Đọc ngay ➔</span>
+            </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 3: (Chờ đê...) 🔒
-        </li>
-        <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 4 - End: (Đang lết...)
+            Chương 11 - End: (Đang cập nhật...) 🔒
         </li>
     </ul>
 </div>
