@@ -1,5 +1,6 @@
 <!-- Font Preloading for Performance -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"></noscript>
 
 <!-- Open Graph / Facebook Meta Tags -->
 <meta property="og:type" content="{% if page.layout == 'chapter' or page.parent %}article{% else %}website{% endif %}">
@@ -184,7 +185,7 @@
         display: block;
     }
 
-    /* === 3. CARD LAYOUT (Cái hộp nổi giữa màn hình) === */
+    /* === 5. CARD LAYOUT (Cái hộp nổi giữa màn hình) === */
     .page-content {
         padding: 40px 20px;
         min-height: 80vh; /* Đảm bảo web đủ dài */
@@ -525,15 +526,25 @@
             item.addEventListener('click', closeMobileMenu);
         });
 
-        // Reading progress bar
+        // Reading progress bar with throttling
         const progressBar = document.getElementById('reading-progress');
         if (progressBar) {
-            window.addEventListener('scroll', function() {
+            let ticking = false;
+            
+            function updateProgressBar() {
                 const windowHeight = window.innerHeight;
                 const documentHeight = document.documentElement.scrollHeight;
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
                 progressBar.style.width = Math.min(scrollPercent, 100) + '%';
+                ticking = false;
+            }
+            
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateProgressBar);
+                    ticking = true;
+                }
             });
         }
     });
