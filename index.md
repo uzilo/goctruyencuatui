@@ -19,7 +19,7 @@ nav_order: 1
 <div class="bookshelf-grid">
 
     <a href="./truyen/boyfriend-material/" class="book-card">
-        <img src="./truyen/boyfriend-material/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300/e74c3c/white?text=Boyfriend+Material'">
+        <img src="./truyen/boyfriend-material/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/e74c3c/white?text=Boyfriend+Material'">
         <div class="card-body">
             <h3 class="card-title" style="color: #e74c3c;">Boyfriend Material</h3>
             <div class="card-author">Tác giả: Alexis Hall</div>
@@ -31,7 +31,7 @@ nav_order: 1
     </a>
 
     <a href="./truyen/the-wolf-at-the-door/" class="book-card">
-        <img src="./truyen/the-wolf-at-the-door/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="./truyen/the-wolf-at-the-door/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">The Wolf at the Door (Sói Nơi Ngưỡng Cửa)</h3>
             <div class="card-author">Tác giả: Charlie Adhara</div>
@@ -43,7 +43,7 @@ nav_order: 1
     </a>
 
     <a href="./truyen/the-foxhole-court/" class="book-card">
-        <img src="./truyen/the-foxhole-court/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="./truyen/the-foxhole-court/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">The Foxhole Court (Sân Vận Động Hang Cáo)</h3>
             <div class="card-author">Tác giả: Nora Sakavic</div>
@@ -55,7 +55,7 @@ nav_order: 1
     </a>
 
     <a href="./truyen/the-long-game/" class="book-card">
-        <img src="./truyen/the-long-game/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="./truyen/the-long-game/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">The Long Game (Ván Đấu Dài Hơi)</h3>
             <div class="card-author">Tác giả: Rachel Reid</div>
@@ -77,7 +77,7 @@ nav_order: 1
     <div class="bookshelf-grid">
         <a href="./truyen/red-white-and-royal-blue/" class="book-card" style="border: 2px solid #27ae60; position: relative;">
             <div style="position: absolute; top: 10px; right: 10px; background: #27ae60; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">FULL</div>
-            <img src="./truyen/red-white-and-royal-blue/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+            <img src="./truyen/red-white-and-royal-blue/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
             <div class="card-body">
                 <h3 class="card-title" style="color: #27ae60;">Red, White & Royal Blue</h3>
                 <div class="card-author">Tác giả: Casey McQuiston</div>
@@ -97,10 +97,9 @@ nav_order: 1
     </div>
     
     <div class="bookshelf-grid">
-        
         <a href="./truyen/in-memoriam/" class="book-card" style="opacity: 0.9; border: 1px dashed #5d4037;">
             <div style="position: absolute; top: 10px; right: 10px; background: #5d4037; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">COMING SOON</div>
-            <img src="./truyen/in-memoriam/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300/5d4037/white?text=In+Memoriam'">
+            <img src="./truyen/in-memoriam/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/5d4037/white?text=In+Memoriam'">
             <div class="card-body">
                 <h3 class="card-title" style="color: #5d4037;">In Memoriam</h3>
                 <div class="card-author">Tác giả: Alice Winn</div>
@@ -113,7 +112,7 @@ nav_order: 1
 
         <a href="./truyen/swimming-in-the-dark/" class="book-card" style="opacity: 0.9; border: 1px dashed #2c3e50;">
             <div style="position: absolute; top: 10px; right: 10px; background: #2c3e50; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">COMING SOON</div>
-            <img src="./truyen/swimming-in-the-dark/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300/2c3e50/white?text=Swimming+in+the+Dark'">
+            <img src="./truyen/swimming-in-the-dark/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/2c3e50/white?text=Swimming+in+the+Dark'">
             <div class="card-body">
                 <h3 class="card-title" style="color: #2c3e50;">Swimming in the Dark</h3>
                 <div class="card-author">Tác giả: Tomasz Jedrowski</div>
@@ -126,7 +125,7 @@ nav_order: 1
 
         <a href="./truyen/to-catch-a-firefly/" class="book-card" style="opacity: 0.9; border: 1px dashed #f39c12;">
             <div style="position: absolute; top: 10px; right: 10px; background: #f39c12; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">COMING SOON</div>
-            <img src="./truyen/to-catch-a-firefly/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300/f39c12/white?text=To+Catch+a+Firefly'">
+            <img src="./truyen/to-catch-a-firefly/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/f39c12/white?text=To+Catch+a+Firefly'">
             <div class="card-body">
                 <h3 class="card-title" style="color: #f39c12;">To Catch a Firefly</h3>
                 <div class="card-author">Tác giả: Emmy Sanders</div>
@@ -139,7 +138,7 @@ nav_order: 1
 
         <a href="./truyen/cut-and-run/" class="book-card" style="opacity: 0.9; border: 1px dashed #1f2f5c;">
             <div style="position: absolute; top: 10px; right: 10px; background: #1f2f5c; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">COMING SOON</div>
-            <img src="./truyen/cut-and-run/cover.jpg" alt="Cover" class="card-cover" onerror="this.src='https://placehold.co/200x300/1f2f5c/white?text=Cut+&+Run'">
+            <img src="./truyen/cut-and-run/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/1f2f5c/white?text=Cut+&+Run'">
             <div class="card-body">
                 <h3 class="card-title" style="color: #1f2f5c;">Cut & Run</h3>
                 <div class="card-author">Tác giả: Abigail Roux</div>

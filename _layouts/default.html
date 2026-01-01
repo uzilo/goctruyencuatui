@@ -13,24 +13,37 @@
     {% include head-custom.html %}
 </head>
 <body>
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress" class="reading-progress"></div>
 
     <header class="site-header">
         <div class="header-inner">
             <div class="header-left">
-                <button class="mobile-menu-btn">☰</button>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">☰</button>
                 
                 <a href="{{ site.baseurl }}/" class="site-logo">
                     GócTruyện<span style="color: #159957;">CủaTui</span>
                 </a>
 
-                <nav class="desktop-nav">
+                <nav class="desktop-nav" aria-label="Main navigation">
                     <a href="{{ site.baseurl }}/tags/#dang-ra" class="nav-item">🔥 Đang Ra</a>
                     <a href="{{ site.baseurl }}/tags/#hoan-thanh" class="nav-item">✅ Hoàn Thành</a>
                     <a href="{{ site.baseurl }}/tags/#drop" class="nav-item">🍂 Drop</a>
                 </nav>
             </div>
-            </div>
+        </div>
     </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-content">
+            <button class="mobile-nav-close" aria-label="Close mobile menu">✕</button>
+            <a href="{{ site.baseurl }}/" class="mobile-nav-item">🏠 Trang Chủ</a>
+            <a href="{{ site.baseurl }}/tags/#dang-ra" class="mobile-nav-item">🔥 Đang Ra</a>
+            <a href="{{ site.baseurl }}/tags/#hoan-thanh" class="mobile-nav-item">✅ Hoàn Thành</a>
+            <a href="{{ site.baseurl }}/tags/#drop" class="mobile-nav-item">🍂 Drop</a>
+        </div>
+    </nav>
 
     <main class="page-content">
         <div class="card-wrapper">
