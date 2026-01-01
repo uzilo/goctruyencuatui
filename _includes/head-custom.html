@@ -535,8 +535,17 @@
                 const windowHeight = window.innerHeight;
                 const documentHeight = document.documentElement.scrollHeight;
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
-                progressBar.style.width = Math.min(scrollPercent, 100) + '%';
+                const scrollableHeight = documentHeight - windowHeight;
+                
+                // Prevent division by zero if page is not scrollable
+                if (scrollableHeight <= 0) {
+                    progressBar.style.width = '100%';
+                    ticking = false;
+                    return;
+                }
+                
+                const scrollPercent = (scrollTop / scrollableHeight) * 100;
+                progressBar.style.width = Math.min(Math.max(scrollPercent, 0), 100) + '%';
                 ticking = false;
             }
             
