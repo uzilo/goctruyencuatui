@@ -38,7 +38,9 @@ permalink: /tags/
   {% endfor %}
 </ul>
 
-<div id="dang-ra" style="margin-top: 50px;"></div>
+<hr>
+
+<div id="dang-ra"></div>
 ## 🔥 Truyện Đang Ra
 <ul>
   {% for p in site.pages %}
@@ -50,7 +52,7 @@ permalink: /tags/
 
 <hr>
 
-<div id="hoan-thanh" style="margin-top: 50px;"></div>
+<div id="hoan-thanh"></div>
 ## ✅ Hoàn Thành
 <ul>
   {% for p in site.pages %}
@@ -62,7 +64,7 @@ permalink: /tags/
 
 <hr>
 
-<div id="drop" style="margin-top: 50px;"></div>
+<div id="drop"></div>
 ## 🍂 Drop (Hố sâu không đáy)
 <ul>
   {% for p in site.pages %}
