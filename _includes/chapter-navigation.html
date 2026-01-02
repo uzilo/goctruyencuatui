@@ -1,0 +1,19 @@
+<nav class="chapter-navigation" aria-label="Chapter navigation">
+  {% if page.prev_chapter %}
+  <a href="{{ page.prev_chapter }}" class="nav-btn prev-btn">
+    ← Chương trước
+  </a>
+  {% else %}
+  <a href="./" class="nav-btn prev-btn">
+    ← Mục Lục
+  </a>
+  {% endif %}
+  
+  {% if page.next_chapter %}
+  <a href="{{ page.next_chapter }}" class="nav-btn next-btn">
+    Chương tiếp →
+  </a>
+  {% else %}
+  <span class="nav-btn disabled">Hết rồi 🎉</span>
+  {% endif %}
+</nav>

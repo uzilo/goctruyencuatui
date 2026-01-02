@@ -1,3 +1,29 @@
+<!-- Font Preloading for Performance -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"></noscript>
+
+<!-- Open Graph / Facebook Meta Tags -->
+<meta property="og:type" content="{% if page.layout == 'chapter' or page.parent %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ page.description | default: page.summary | default: site.description }}">
+{% if page.cover_image %}
+<meta property="og:image" content="{{ page.cover_image | absolute_url }}">
+{% elsif site.logo %}
+<meta property="og:image" content="{{ site.logo | absolute_url }}">
+{% endif %}
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="vi_VN">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta name="twitter:description" content="{{ page.description | default: page.summary | default: site.description }}">
+{% if page.cover_image %}
+<meta name="twitter:image" content="{{ page.cover_image | absolute_url }}">
+{% endif %}
+
 <style>
     /* === 1. RESET & BASIC SETUP === */
     :root {
@@ -16,7 +42,19 @@
         color: var(--text-main);
     }
 
-    /* === 2. HEADER STYLE === */
+    /* === 2. READING PROGRESS BAR === */
+    .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: linear-gradient(90deg, #159957 0%, #0e6e3f 100%);
+        z-index: 9999;
+        transition: width 0.1s ease;
+    }
+
+    /* === 3. HEADER STYLE === */
     .site-header {
         background: #fff;
         border-bottom: 1px solid var(--border-color);
@@ -62,7 +100,12 @@
         font-size: 0.95rem;
         transition: color 0.2s;
     }
-    .nav-item:hover { color: var(--primary-color); }
+    .nav-item:hover,
+    .nav-item:focus { 
+        color: var(--primary-color);
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+    }
 
     .header-right {
         display: flex;
@@ -70,9 +113,79 @@
         gap: 15px;
     }
 
-    .mobile-menu-btn { display: none; border: none; background: none; font-size: 1.5rem; }
+    .mobile-menu-btn { 
+        display: none; 
+        border: none; 
+        background: none; 
+        font-size: 1.5rem; 
+        cursor: pointer;
+        padding: 5px;
+    }
 
-    /* === 3. CARD LAYOUT (Cái hộp nổi giữa màn hình) === */
+    /* === 4. MOBILE NAVIGATION === */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #fff;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        z-index: 2000;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+    }
+
+    .mobile-nav.active {
+        left: 0;
+    }
+
+    .mobile-nav-content {
+        padding: 20px;
+    }
+
+    .mobile-nav-close {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-bottom: 30px;
+        color: #666;
+    }
+
+    .mobile-nav-item {
+        display: block;
+        padding: 15px 10px;
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #eee;
+        transition: background 0.2s;
+    }
+
+    .mobile-nav-item:hover {
+        background: #f5f5f5;
+        color: var(--primary-color);
+    }
+
+    /* Mobile nav backdrop */
+    .mobile-nav-backdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1999;
+    }
+
+    .mobile-nav-backdrop.active {
+        display: block;
+    }
+
+    /* === 5. CARD LAYOUT (Cái hộp nổi giữa màn hình) === */
     .page-content {
         padding: 40px 20px;
         min-height: 80vh; /* Đảm bảo web đủ dài */
@@ -87,7 +200,103 @@
         box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* Đổ bóng nhẹ tạo độ nổi */
     }
 
-    /* === 4. BOOK DETAIL LAYOUT (Layout truyện giống ảnh) === */
+    /* === BREADCRUMB NAVIGATION === */
+    .breadcrumb {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: #888;
+        transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover,
+    .breadcrumb a:focus {
+        color: var(--primary-color);
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+
+    .breadcrumb span {
+        color: var(--primary-color);
+    }
+
+    /* === CHAPTER STYLES === */
+    .chapter-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .chapter-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .chapter-title {
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .chapter-subtitle {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        font-weight: normal;
+        margin-top: 0;
+    }
+
+    .chapter-content {
+        line-height: 2;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    /* === CHAPTER NAVIGATION === */
+    .chapter-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        margin-top: 3rem;
+        border-top: 2px solid #eee;
+        gap: 1rem;
+    }
+
+    .nav-btn {
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: inline-block;
+    }
+
+    .nav-btn.prev-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .nav-btn.next-btn {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    .nav-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .nav-btn.disabled {
+        background: #ddd;
+        color: #999;
+        cursor: not-allowed;
+    }
+
+    /* === 6. BOOK DETAIL LAYOUT (Layout truyện giống ảnh) === */
     .epub-layout {
         display: flex;
         gap: 40px;
@@ -97,7 +306,6 @@
     .epub-cover {
         flex: 0 0 260px; /* Cột ảnh cố định 260px */
     }
-    
     .epub-cover img {
         width: 100%;
         border-radius: 8px;
@@ -163,7 +371,7 @@
         border-bottom: 3px solid var(--primary-color);
     }
 
-    /* === 5. BOOKSHELF GRID (Phần fix lỗi) === */
+    /* === 7. BOOKSHELF GRID (Phần fix lỗi) === */
     .bookshelf-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Tự động chia cột, tối thiểu 200px */
@@ -260,10 +468,13 @@
         .desktop-nav { display: none; } /* Ẩn menu ngang trên đt */
         .mobile-menu-btn { display: block; }
         .card-wrapper { padding: 20px; }
+        .chapter-navigation { flex-direction: column; }
+        .nav-btn { width: 100%; text-align: center; }
     }
 </style>
 
 <script>
+    // Tab switching function
     function openTab(tabName) {
         // Ẩn hết nội dung tab
         document.getElementById('tab-content-details').style.display = 'none';
@@ -276,4 +487,74 @@
         document.getElementById('tab-content-' + tabName).style.display = 'block';
         event.currentTarget.classList.add('active');
     }
+
+    // Mobile menu functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileNavClose = document.querySelector('.mobile-nav-close');
+        
+        // Create backdrop
+        const backdrop = document.createElement('div');
+        backdrop.className = 'mobile-nav-backdrop';
+        document.body.appendChild(backdrop);
+
+        function openMobileMenu() {
+            mobileNav.classList.add('active');
+            backdrop.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileNav.classList.remove('active');
+            backdrop.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', openMobileMenu);
+        }
+
+        if (mobileNavClose) {
+            mobileNavClose.addEventListener('click', closeMobileMenu);
+        }
+
+        backdrop.addEventListener('click', closeMobileMenu);
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+            item.addEventListener('click', closeMobileMenu);
+        });
+
+        // Reading progress bar with throttling
+        const progressBar = document.getElementById('reading-progress');
+        if (progressBar) {
+            let ticking = false;
+            
+            function updateProgressBar() {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollableHeight = documentHeight - windowHeight;
+                
+                // Prevent division by zero if page is not scrollable
+                if (scrollableHeight <= 0) {
+                    progressBar.style.width = '100%';
+                    ticking = false;
+                    return;
+                }
+                
+                const scrollPercent = (scrollTop / scrollableHeight) * 100;
+                progressBar.style.width = Math.min(Math.max(scrollPercent, 0), 100) + '%';
+                ticking = false;
+            }
+            
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateProgressBar);
+                    ticking = true;
+                }
+            });
+        }
+    });
 </script>

@@ -22,7 +22,7 @@ genres: "Rom-Com, Hoàng gia, Enemies to lovers"
 
 <div class="epub-layout">
     <div class="epub-cover">
-        <img src="./cover.jpg" alt="Red, White & Royal Blue Cover" onerror="this.src='https://placehold.co/400x600?text=RWRB+Cover'">
+        <img src="./cover.jpg" alt="Red, White & Royal Blue Cover" loading="lazy" onerror="this.src='https://placehold.co/400x600?text=RWRB+Cover'">
         
         <a href="./chap-01" class="read-now-btn">📖 Đọc Ngay</a>
     </div>
