@@ -375,7 +375,15 @@ document.addEventListener('DOMContentLoaded', function() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const scrollPercent = Math.min(100, Math.round((scrollTop / (documentHeight - windowHeight)) * 100));
+      const scrollableHeight = documentHeight - windowHeight;
+      
+      // Prevent division by zero
+      if (scrollableHeight <= 0) {
+        maxScroll = 100;
+        return;
+      }
+      
+      const scrollPercent = Math.min(100, Math.round((scrollTop / scrollableHeight) * 100));
       
       if (scrollPercent > maxScroll) {
         maxScroll = scrollPercent;
@@ -384,8 +392,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('scroll', updateProgress);
     
-    // Save progress when leaving page
-    window.addEventListener('beforeunload', function() {
+    // Save progress when leaving page - use multiple events for reliability
+    function saveProgress() {
       // Try to get book cover
       const bookCoverInPage = document.querySelector('.epub-cover img, .card-cover');
       let thumbnail = '';
@@ -403,6 +411,14 @@ document.addEventListener('DOMContentLoaded', function() {
         thumbnail: thumbnail,
         progress: maxScroll
       });
+    }
+    
+    // Use multiple event listeners for better reliability
+    window.addEventListener('beforeunload', saveProgress);
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        saveProgress();
+      }
     });
   }
   

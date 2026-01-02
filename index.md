@@ -46,23 +46,24 @@ nav_order: 1
 // Animated counter for hero stats
 document.addEventListener('DOMContentLoaded', function() {
     const counters = document.querySelectorAll('.stat-number');
-    const speed = 200;
+    const duration = 2000; // 2 seconds animation
     
     counters.forEach(counter => {
-        const animate = () => {
-            const value = +counter.getAttribute('data-target');
-            const data = +counter.innerText;
-            const time = value / speed;
-            
-            if (data < value) {
-                counter.innerText = Math.ceil(data + time);
-                setTimeout(animate, 1);
+        const target = +counter.getAttribute('data-target');
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                counter.innerText = Math.ceil(current);
+                requestAnimationFrame(updateCounter);
             } else {
-                counter.innerText = value;
+                counter.innerText = target;
             }
         };
         
-        animate();
+        requestAnimationFrame(updateCounter);
     });
 });
 </script>

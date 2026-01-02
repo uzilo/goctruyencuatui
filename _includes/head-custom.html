@@ -404,6 +404,7 @@
         background: linear-gradient(90deg, #159957, #155799);
         transform: scaleX(0);
         transition: transform 0.3s ease;
+        /* Note: Creates GPU layer only on hover, minimal performance impact */
     }
 
     .book-card:hover::before {
