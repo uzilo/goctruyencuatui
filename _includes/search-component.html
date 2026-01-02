@@ -1,0 +1,400 @@
+<!-- Search Modal Component -->
+<div id="search-modal" class="search-modal" role="dialog" aria-labelledby="search-title" aria-modal="true">
+  <div class="search-modal-content">
+    <div class="search-header">
+      <h2 id="search-title" style="margin: 0; font-size: 1.2rem; color: #333;">🔍 Tìm kiếm truyện</h2>
+      <button id="search-close" class="search-close-btn" aria-label="Đóng tìm kiếm">✕</button>
+    </div>
+    
+    <div class="search-input-wrapper">
+      <input 
+        type="text" 
+        id="search-input" 
+        class="search-input" 
+        placeholder="Tìm theo tên truyện hoặc tác giả..."
+        aria-label="Nhập từ khóa tìm kiếm"
+      />
+    </div>
+    
+    <div id="search-results" class="search-results">
+      <div class="search-hint">Nhấn <kbd>Ctrl</kbd> + <kbd>K</kbd> để mở tìm kiếm nhanh</div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Search Modal Styles */
+.search-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3000;
+  backdrop-filter: blur(5px);
+}
+
+.search-modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15vh;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 70vh;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  padding: 5px;
+  transition: color 0.2s;
+}
+
+.search-close-btn:hover {
+  color: #333;
+}
+
+.search-input-wrapper {
+  padding: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #159957;
+}
+
+.search-results {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 20px 20px;
+}
+
+.search-hint {
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  padding: 20px;
+}
+
+.search-hint kbd {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.search-result-item {
+  display: flex;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-bottom: 8px;
+}
+
+.search-result-item:hover {
+  background: #f5f5f5;
+}
+
+.search-result-thumbnail {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-result-info {
+  flex: 1;
+}
+
+.search-result-title {
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.search-result-author {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.search-no-results {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+/* Dark mode support */
+body.dark-mode .search-modal-content {
+  background: #2d2d2d;
+  color: #e0e0e0;
+}
+
+body.dark-mode .search-header {
+  border-bottom-color: #444;
+}
+
+body.dark-mode .search-header h2 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .search-input {
+  background: #444;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+body.dark-mode .search-hint {
+  color: #aaa;
+}
+
+body.dark-mode .search-hint kbd {
+  background: #444;
+  border-color: #555;
+  color: #aaa;
+}
+
+body.dark-mode .search-result-item:hover {
+  background: #3a3a3a;
+}
+
+body.dark-mode .search-result-title {
+  color: #55efc4;
+}
+
+body.dark-mode .search-result-author {
+  color: #b2bec3;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchModal = document.getElementById('search-modal');
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const searchCloseBtn = document.getElementById('search-close');
+  
+  // Books database (you can expand this with all books)
+  const books = [
+    {
+      title: 'Boyfriend Material',
+      author: 'Alexis Hall',
+      url: './truyen/boyfriend-material/',
+      thumbnail: './truyen/boyfriend-material/cover.jpg',
+      tags: 'Hài hước, Fake Dating, Oan gia'
+    },
+    {
+      title: 'The Wolf at the Door (Sói Nơi Ngưỡng Cửa)',
+      author: 'Charlie Adhara',
+      url: './truyen/the-wolf-at-the-door/',
+      thumbnail: './truyen/the-wolf-at-the-door/cover.jpg',
+      tags: 'Trinh thám, Hành động, Oan gia ngõ hẹp'
+    },
+    {
+      title: 'The Foxhole Court (Sân Vận Động Hang Cáo)',
+      author: 'Nora Sakavic',
+      url: './truyen/the-foxhole-court/',
+      thumbnail: './truyen/the-foxhole-court/cover.jpg',
+      tags: 'Sport (Exy), Tâm lý, Dark, Action'
+    },
+    {
+      title: 'The Long Game (Ván Đấu Dài Hơi)',
+      author: 'Rachel Reid',
+      url: './truyen/the-long-game/',
+      thumbnail: './truyen/the-long-game/cover.jpg',
+      tags: 'Sport (Hockey), Rivals to Lovers'
+    },
+    {
+      title: 'Red, White & Royal Blue',
+      author: 'Casey McQuiston',
+      url: './truyen/red-white-and-royal-blue/',
+      thumbnail: './truyen/red-white-and-royal-blue/cover.jpg',
+      tags: 'Rom-Com, Hoàng gia, Enemies to lovers'
+    },
+    {
+      title: 'In Memoriam',
+      author: 'Alice Winn',
+      url: './truyen/in-memoriam/',
+      thumbnail: './truyen/in-memoriam/cover.jpg',
+      tags: 'Lịch sử, Chiến tranh, Bi kịch'
+    },
+    {
+      title: 'Swimming in the Dark',
+      author: 'Tomasz Jedrowski',
+      url: './truyen/swimming-in-the-dark/',
+      thumbnail: './truyen/swimming-in-the-dark/cover.jpg',
+      tags: 'Lịch sử, Chính trị, Day dứt'
+    },
+    {
+      title: 'To Catch a Firefly',
+      author: 'Emmy Sanders',
+      url: './truyen/to-catch-a-firefly/',
+      thumbnail: './truyen/to-catch-a-firefly/cover.jpg',
+      tags: 'Friends-to-Lovers, Yêu thầm'
+    },
+    {
+      title: 'Cut & Run',
+      author: 'Abigail Roux',
+      url: './truyen/cut-and-run/',
+      thumbnail: './truyen/cut-and-run/cover.jpg',
+      tags: 'Hành động, Trinh thám, Oan gia'
+    }
+  ];
+  
+  // Open search modal
+  function openSearchModal() {
+    searchModal.classList.add('active');
+    searchInput.focus();
+    document.body.style.overflow = 'hidden';
+  }
+  
+  // Close search modal
+  function closeSearchModal() {
+    searchModal.classList.remove('active');
+    searchInput.value = '';
+    searchResults.innerHTML = '<div class="search-hint">Nhấn <kbd>Ctrl</kbd> + <kbd>K</kbd> để mở tìm kiếm nhanh</div>';
+    document.body.style.overflow = '';
+  }
+  
+  // Keyboard shortcut (Ctrl+K or Cmd+K)
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearchModal();
+    }
+    if (e.key === 'Escape' && searchModal.classList.contains('active')) {
+      closeSearchModal();
+    }
+  });
+  
+  // Close button
+  if (searchCloseBtn) {
+    searchCloseBtn.addEventListener('click', closeSearchModal);
+  }
+  
+  // Close on backdrop click
+  searchModal.addEventListener('click', function(e) {
+    if (e.target === searchModal) {
+      closeSearchModal();
+    }
+  });
+  
+  // Search functionality
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase().trim();
+    
+    if (query === '') {
+      searchResults.innerHTML = '<div class="search-hint">Nhấn <kbd>Ctrl</kbd> + <kbd>K</kbd> để mở tìm kiếm nhanh</div>';
+      return;
+    }
+    
+    const results = books.filter(book => {
+      return book.title.toLowerCase().includes(query) ||
+             book.author.toLowerCase().includes(query) ||
+             book.tags.toLowerCase().includes(query);
+    });
+    
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div class="search-no-results">😔 Không tìm thấy truyện nào phù hợp</div>';
+      return;
+    }
+    
+    searchResults.innerHTML = results.map(book => `
+      <a href="${book.url}" class="search-result-item">
+        <img src="${book.thumbnail}" alt="${book.title}" class="search-result-thumbnail" 
+             onerror="this.src='https://placehold.co/60x90/159957/white?text=📚'">
+        <div class="search-result-info">
+          <h3 class="search-result-title">${book.title}</h3>
+          <p class="search-result-author">${book.author}</p>
+        </div>
+      </a>
+    `).join('');
+  });
+  
+  // Add search button to header (if not already exists)
+  const header = document.querySelector('.header-right') || document.querySelector('.header-inner');
+  if (header && !document.getElementById('search-btn')) {
+    const searchBtn = document.createElement('button');
+    searchBtn.id = 'search-btn';
+    searchBtn.className = 'search-trigger-btn';
+    searchBtn.innerHTML = '🔍';
+    searchBtn.setAttribute('aria-label', 'Tìm kiếm truyện');
+    searchBtn.setAttribute('title', 'Tìm kiếm (Ctrl+K)');
+    searchBtn.style.cssText = `
+      border: none;
+      background: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 8px 12px;
+      transition: transform 0.2s;
+    `;
+    searchBtn.addEventListener('click', openSearchModal);
+    searchBtn.addEventListener('mouseenter', function() {
+      this.style.transform = 'scale(1.2)';
+    });
+    searchBtn.addEventListener('mouseleave', function() {
+      this.style.transform = 'scale(1)';
+    });
+    
+    // Try to add to header-right, or create it
+    let headerRight = document.querySelector('.header-right');
+    if (!headerRight) {
+      headerRight = document.createElement('div');
+      headerRight.className = 'header-right';
+      header.appendChild(headerRight);
+    }
+    headerRight.appendChild(searchBtn);
+  }
+});
+</script>
