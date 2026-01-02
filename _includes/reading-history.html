@@ -1,0 +1,416 @@
+<!-- Reading History Widget -->
+<div id="reading-history-widget" class="reading-history-widget">
+  <button id="history-toggle" class="history-toggle-btn" title="Lịch sử đọc" aria-label="Lịch sử đọc">
+    📚
+    <span id="history-badge" class="history-badge" style="display: none;">0</span>
+  </button>
+  
+  <div id="history-panel" class="history-panel">
+    <div class="history-header">
+      <h3 style="margin: 0; font-size: 1rem; color: #333;">📖 Lịch sử đọc</h3>
+      <button id="clear-history-btn" class="clear-history-btn" title="Xóa lịch sử">🗑️</button>
+    </div>
+    
+    <div id="history-list" class="history-list">
+      <div class="history-empty">Chưa có lịch sử đọc nào</div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Reading History Widget */
+.reading-history-widget {
+  position: fixed;
+  bottom: 95px;
+  right: 30px;
+  z-index: 9998;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.history-toggle-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #3498db;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: transform 0.2s, background 0.2s;
+  position: relative;
+}
+
+.history-toggle-btn:hover {
+  transform: scale(1.1);
+  background: #2980b9;
+}
+
+.history-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #e74c3c;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+}
+
+.history-panel {
+  position: absolute;
+  bottom: 65px;
+  right: 0;
+  width: 300px;
+  max-height: 400px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.history-panel.show {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.clear-history-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.clear-history-btn:hover {
+  transform: scale(1.2);
+}
+
+.history-list {
+  overflow-y: auto;
+  max-height: 320px;
+}
+
+.history-empty {
+  text-align: center;
+  color: #999;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+}
+
+.history-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-bottom: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+.history-item:hover {
+  background: #f5f5f5;
+}
+
+.history-item-thumbnail {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.history-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.history-item-title {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.history-item-chapter {
+  color: #7f8c8d;
+  font-size: 0.75rem;
+}
+
+.history-item-time {
+  color: #95a5a6;
+  font-size: 0.7rem;
+}
+
+.history-item-progress {
+  height: 3px;
+  background: #ecf0f1;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.history-item-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  transition: width 0.3s;
+}
+
+/* Dark mode support */
+body.dark-mode .history-panel {
+  background: #2d2d2d;
+  border: 1px solid #444;
+}
+
+body.dark-mode .history-header {
+  border-bottom-color: #444;
+}
+
+body.dark-mode .history-header h3 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .history-empty {
+  color: #aaa;
+}
+
+body.dark-mode .history-item {
+  border-color: #444;
+}
+
+body.dark-mode .history-item:hover {
+  background: #3a3a3a;
+}
+
+body.dark-mode .history-item-title {
+  color: #55efc4;
+}
+
+body.dark-mode .history-item-chapter,
+body.dark-mode .history-item-time {
+  color: #b2bec3;
+}
+
+body.dark-mode .history-item-progress {
+  background: #444;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .reading-history-widget {
+    bottom: 95px;
+    right: 20px;
+  }
+  
+  .history-panel {
+    width: calc(100vw - 40px);
+    right: -10px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const historyWidget = document.getElementById('reading-history-widget');
+  const historyToggle = document.getElementById('history-toggle');
+  const historyPanel = document.getElementById('history-panel');
+  const historyList = document.getElementById('history-list');
+  const historyBadge = document.getElementById('history-badge');
+  const clearHistoryBtn = document.getElementById('clear-history-btn');
+  
+  const MAX_HISTORY = 10;
+  
+  // Load reading history from localStorage
+  function getReadingHistory() {
+    const history = localStorage.getItem('reading_history');
+    return history ? JSON.parse(history) : [];
+  }
+  
+  // Save reading history to localStorage
+  function saveReadingHistory(history) {
+    localStorage.setItem('reading_history', JSON.stringify(history));
+  }
+  
+  // Add item to reading history
+  function addToHistory(item) {
+    let history = getReadingHistory();
+    
+    // Remove duplicate if exists
+    history = history.filter(h => h.url !== item.url);
+    
+    // Add to beginning
+    history.unshift({
+      ...item,
+      timestamp: Date.now()
+    });
+    
+    // Keep only MAX_HISTORY items
+    if (history.length > MAX_HISTORY) {
+      history = history.slice(0, MAX_HISTORY);
+    }
+    
+    saveReadingHistory(history);
+    renderHistory();
+  }
+  
+  // Format time ago
+  function timeAgo(timestamp) {
+    const now = Date.now();
+    const diff = now - timestamp;
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
+    const days = Math.floor(diff / 86400000);
+    
+    if (minutes < 1) return 'Vừa xong';
+    if (minutes < 60) return `${minutes} phút trước`;
+    if (hours < 24) return `${hours} giờ trước`;
+    return `${days} ngày trước`;
+  }
+  
+  // Render history list
+  function renderHistory() {
+    const history = getReadingHistory();
+    
+    if (history.length === 0) {
+      historyList.innerHTML = '<div class="history-empty">Chưa có lịch sử đọc nào</div>';
+      historyBadge.style.display = 'none';
+      return;
+    }
+    
+    historyBadge.style.display = 'block';
+    historyBadge.textContent = history.length;
+    
+    historyList.innerHTML = history.map(item => `
+      <a href="${item.url}" class="history-item">
+        <img src="${item.thumbnail || 'https://placehold.co/40x60/159957/white?text=📚'}" 
+             alt="${item.title}" 
+             class="history-item-thumbnail"
+             onerror="this.src='https://placehold.co/40x60/159957/white?text=📚'">
+        <div class="history-item-info">
+          <h4 class="history-item-title">${item.title}</h4>
+          ${item.chapter ? `<div class="history-item-chapter">📄 ${item.chapter}</div>` : ''}
+          <div class="history-item-time">${timeAgo(item.timestamp)}</div>
+          ${item.progress ? `
+            <div class="history-item-progress">
+              <div class="history-item-progress-bar" style="width: ${item.progress}%"></div>
+            </div>
+          ` : ''}
+        </div>
+      </a>
+    `).join('');
+  }
+  
+  // Toggle history panel
+  historyToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    historyPanel.classList.toggle('show');
+  });
+  
+  // Close panel when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!historyPanel.contains(e.target) && e.target !== historyToggle) {
+      historyPanel.classList.remove('show');
+    }
+  });
+  
+  // Clear history
+  clearHistoryBtn.addEventListener('click', function() {
+    if (confirm('Bạn có chắc muốn xóa toàn bộ lịch sử đọc?')) {
+      localStorage.removeItem('reading_history');
+      renderHistory();
+    }
+  });
+  
+  // Auto-track reading when on a chapter page
+  function trackChapterReading() {
+    // Check if we're on a chapter page (has breadcrumb)
+    const breadcrumb = document.querySelector('.breadcrumb');
+    if (!breadcrumb) return;
+    
+    // Try to extract book and chapter info
+    const breadcrumbLinks = breadcrumb.querySelectorAll('a');
+    if (breadcrumbLinks.length < 2) return;
+    
+    const bookLink = breadcrumbLinks[breadcrumbLinks.length - 2];
+    const bookTitle = bookLink.textContent.trim();
+    const bookUrl = bookLink.getAttribute('href');
+    
+    // Get current chapter
+    const chapterTitle = document.querySelector('.chapter-title, h1');
+    const chapterTitleText = chapterTitle ? chapterTitle.textContent.trim() : '';
+    
+    // Track scroll progress
+    let maxScroll = 0;
+    function updateProgress() {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollPercent = Math.min(100, Math.round((scrollTop / (documentHeight - windowHeight)) * 100));
+      
+      if (scrollPercent > maxScroll) {
+        maxScroll = scrollPercent;
+      }
+    }
+    
+    window.addEventListener('scroll', updateProgress);
+    
+    // Save progress when leaving page
+    window.addEventListener('beforeunload', function() {
+      // Try to get book cover
+      const bookCoverInPage = document.querySelector('.epub-cover img, .card-cover');
+      let thumbnail = '';
+      if (bookCoverInPage) {
+        thumbnail = bookCoverInPage.src;
+      } else {
+        // Try to construct thumbnail path from book URL
+        thumbnail = bookUrl.replace('/index.html', '/cover.jpg');
+      }
+      
+      addToHistory({
+        title: bookTitle,
+        chapter: chapterTitleText,
+        url: bookUrl,
+        thumbnail: thumbnail,
+        progress: maxScroll
+      });
+    });
+  }
+  
+  // Initialize
+  renderHistory();
+  trackChapterReading();
+  
+  // Export function for manual tracking
+  window.addToReadingHistory = addToHistory;
+});
+</script>

@@ -4,14 +4,70 @@ title: Trang Chủ
 nav_order: 1
 ---
 
-<div style="text-align: center; margin-bottom: 50px;">
-    <h1 style="color: #2c3e50; font-weight: 800; font-size: 2.2rem; margin-bottom: 10px;">🏳️‍🌈 Chào mừng đến với Góc Truyện Của Tui</h1>
-    <p style="color: #7f8c8d; font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+<!-- Hero Section with Animation -->
+<div class="hero-section">
+    <div class="floating-books">
+        <span class="book-emoji">📚</span>
+        <span class="book-emoji">📖</span>
+        <span class="book-emoji">📕</span>
+        <span class="book-emoji">📗</span>
+    </div>
+    
+    <h1 class="gradient-text" style="font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; position: relative; z-index: 1;">
+        🏳️‍🌈 Chào mừng đến với Góc Truyện Của Tui
+    </h1>
+    
+    <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; max-width: 700px; margin: 0 auto 20px; position: relative; z-index: 1;">
         Đây là cái ổ nhỏ tui lập ra để lưu trữ mấy bộ đam mỹ, boylove mà tui tâm đắc. Web nhà làm, bao mượt, không quảng cáo, đọc sướng con mắt.
     </p>
+    
+    <div class="hero-stats">
+        <div class="stat-item">
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-label">Truyện</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="50">0</span>
+            <span class="stat-label">Chương</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="1500">0</span>
+            <span class="stat-label">Lượt đọc</span>
+        </div>
+    </div>
+    
+    <div class="hero-cta">
+        <a href="#danh-sach-truyen" class="cta-btn primary">📚 Khám phá ngay</a>
+        <a href="./tags/#dang-ra" class="cta-btn secondary">🔥 Truyện mới</a>
+    </div>
 </div>
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<script>
+// Animated counter for hero stats
+document.addEventListener('DOMContentLoaded', function() {
+    const counters = document.querySelectorAll('.stat-number');
+    const speed = 200;
+    
+    counters.forEach(counter => {
+        const animate = () => {
+            const value = +counter.getAttribute('data-target');
+            const data = +counter.innerText;
+            const time = value / speed;
+            
+            if (data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+            } else {
+                counter.innerText = value;
+            }
+        };
+        
+        animate();
+    });
+});
+</script>
+
+<div id="danh-sach-truyen" style="display: flex; align-items: center; margin-bottom: 20px; margin-top: 50px;">
     <h2 style="margin: 0; color: #333; font-weight: 700;">📚 Danh sách truyện đang lên sóng</h2>
     <div style="flex-grow: 1; height: 1px; background: #eee; margin-left: 20px;"></div>
 </div>
@@ -19,6 +75,7 @@ nav_order: 1
 <div class="bookshelf-grid">
 
     <a href="./truyen/boyfriend-material/" class="book-card">
+        <div class="card-status ongoing">Đang ra</div>
         <img src="./truyen/boyfriend-material/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/e74c3c/white?text=Boyfriend+Material'">
         <div class="card-body">
             <h3 class="card-title" style="color: #e74c3c;">Boyfriend Material</h3>
@@ -31,6 +88,7 @@ nav_order: 1
     </a>
 
     <a href="./truyen/the-wolf-at-the-door/" class="book-card">
+        <div class="card-status ongoing">Đang ra</div>
         <img src="./truyen/the-wolf-at-the-door/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">The Wolf at the Door (Sói Nơi Ngưỡng Cửa)</h3>
@@ -43,6 +101,7 @@ nav_order: 1
     </a>
 
     <a href="./truyen/the-foxhole-court/" class="book-card">
+        <div class="card-status ongoing">Đang ra</div>
         <img src="./truyen/the-foxhole-court/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">The Foxhole Court (Sân Vận Động Hang Cáo)</h3>
@@ -55,6 +114,7 @@ nav_order: 1
     </a>
 
     <a href="./truyen/the-long-game/" class="book-card">
+        <div class="card-status ongoing">Đang ra</div>
         <img src="./truyen/the-long-game/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">The Long Game (Ván Đấu Dài Hơi)</h3>
@@ -75,8 +135,8 @@ nav_order: 1
     </div>
 
     <div class="bookshelf-grid">
-        <a href="./truyen/red-white-and-royal-blue/" class="book-card" style="border: 2px solid #27ae60; position: relative;">
-            <div style="position: absolute; top: 10px; right: 10px; background: #27ae60; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; z-index: 10;">FULL</div>
+        <a href="./truyen/red-white-and-royal-blue/" class="book-card">
+            <div class="card-status completed">Hoàn thành</div>
             <img src="./truyen/red-white-and-royal-blue/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
             <div class="card-body">
                 <h3 class="card-title" style="color: #27ae60;">Red, White & Royal Blue</h3>

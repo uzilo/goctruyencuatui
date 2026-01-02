@@ -31,8 +31,13 @@
                     <a href="{{ site.baseurl }}/tags/#drop" class="nav-item">🍂 Drop</a>
                 </nav>
             </div>
+            <div class="header-right">
+                <!-- Search button will be inserted here by search-component.html -->
+            </div>
         </div>
     </header>
+
+    {% include search-component.html %}
 
     <!-- Mobile Navigation Overlay -->
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
@@ -51,10 +56,9 @@
         </div>
     </main>
 
-    <footer class="site-footer">
-        <p>&copy; 2025 TrieuLM. Web chạy bằng cơm & đam mê.</p>
-    </footer>
+    {% include footer-improved.html %}
 
+    {% include reading-history.html %}
     {% include floating-settings.html %}
 
 </body>
