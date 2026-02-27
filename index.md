@@ -23,7 +23,7 @@ nav_order: 1
     
     <div class="hero-stats">
         <div class="stat-item">
-            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-number" data-target="10">0</span>
             <span class="stat-label">Truyện</span>
         </div>
         <div class="stat-item">
@@ -124,6 +124,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 Shane Hollander và Ilya Rozanov: Hai ngôi sao khúc côn cầu, mười năm đối đầu kịch liệt trên sân băng, nhưng lại yêu nhau điên cuồng trong bóng tối.
             </div>
             <span class="card-tag">Sport (Hockey), Rivals to Lovers</span>
+        </div>
+    </a>
+
+    <a href="./truyen/look-closer/" class="book-card">
+        <div class="card-status ongoing">Đang ra</div>
+        <img src="./truyen/look-closer/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/8e44ad/white?text=Look+Closer'">
+        <div class="card-body">
+            <h3 class="card-title" style="color: #8e44ad;">Look Closer (Nhìn Gần Hơn)</h3>
+            <div class="card-author">Tác giả: David Ellis</div>
+            <div class="card-desc" style="font-size: 0.9rem; color: #666; margin-bottom: 15px; flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                Một luật sư, một người phụ nữ bí ẩn, và một cái chết chấn động thị trấn nhỏ Grace Village. Khi nhìn gần hơn, bạn sẽ thấy không ai là vô tội.
+            </div>
+            <span class="card-tag">Thriller, Trinh thám, Bí ẩn</span>
         </div>
     </a>
 
