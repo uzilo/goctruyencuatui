@@ -46,7 +46,7 @@ genres: "Thriller, Trinh thám, Bí ẩn"
 
 <div class="tab-container">
     <button class="tab-btn active" onclick="openTab('details', this)">Giới Thiệu</button>
-    <button class="tab-btn" onclick="openTab('toc', this)">Mục Lục (Đang cập nhật)</button>
+    <button class="tab-btn" onclick="openTab('toc', this)">Mục Lục</button>
 </div>
 
 <div id="tab-content-details" class="tab-content" style="display: block;">
@@ -81,7 +81,7 @@ genres: "Thriller, Trinh thám, Bí ẩn"
     <ul style="list-style: none; padding: 0;">
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-01" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 1: (Sắp ra mắt) 🔒
+                Chương 1: Simon
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
