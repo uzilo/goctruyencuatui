@@ -20,7 +20,7 @@ permalink: /tags/
   {% for p in site.pages %}
     {% if p.tags contains 'DangRa' %}
       <a href="{{ p.url | relative_url }}" class="book-card">
-        <img src="{{ p.cover_image }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="{{ p.cover_image | relative_url }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title">{{ p.title }}</h3>
             <div class="card-author">Tác giả: {{ p.author }}</div>
@@ -42,7 +42,7 @@ permalink: /tags/
   {% for p in site.pages %}
     {% if p.tags contains 'HoanThanh' %}
       <a href="{{ p.url | relative_url }}" class="book-card" style="border: 2px solid #27ae60;">
-        <img src="{{ p.cover_image }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="{{ p.cover_image | relative_url }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title" style="color: #27ae60;">{{ p.title }}</h3>
             <div class="card-author">Tác giả: {{ p.author }}</div>
@@ -64,7 +64,7 @@ permalink: /tags/
   {% for p in site.pages %}
     {% if p.tags contains 'Drop' %}
       <a href="{{ p.url | relative_url }}" class="book-card" style="opacity: 0.7; border: 1px dashed #95a5a6;">
-        <img src="{{ p.cover_image }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="{{ p.cover_image | relative_url }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title" style="color: #95a5a6;">{{ p.title }}</h3>
             <div class="card-author">Tác giả: {{ p.author }}</div>
@@ -86,7 +86,7 @@ permalink: /tags/
   {% for p in site.pages %}
     {% if p.tags contains 'Mystery' %}
       <a href="{{ p.url | relative_url }}" class="book-card">
-        <img src="{{ p.cover_image }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="{{ p.cover_image | relative_url }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title" style="color: #8e44ad;">{{ p.title }}</h3>
             <div class="card-author">Tác giả: {{ p.author }}</div>
@@ -108,7 +108,7 @@ permalink: /tags/
   {% for p in site.pages %}
     {% if p.tags contains 'MM Romance' %}
       <a href="{{ p.url | relative_url }}" class="book-card">
-        <img src="{{ p.cover_image }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="{{ p.cover_image | relative_url }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title" style="color: #e91e63;">{{ p.title }}</h3>
             <div class="card-author">Tác giả: {{ p.author }}</div>
@@ -130,7 +130,7 @@ permalink: /tags/
   {% for p in site.pages %}
     {% if p.tags contains 'Fantasy' %}
       <a href="{{ p.url | relative_url }}" class="book-card">
-        <img src="{{ p.cover_image }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
+        <img src="{{ p.cover_image | relative_url }}" alt="{{ p.title }}" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300?text=No+Cover'">
         <div class="card-body">
             <h3 class="card-title" style="color: #3498db;">{{ p.title }}</h3>
             <div class="card-author">Tác giả: {{ p.author }}</div>

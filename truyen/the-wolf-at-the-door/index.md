@@ -2,7 +2,14 @@
 layout: default
 title: The Wolf at the Door
 nav_order: 1
-tags: [MM Romance, Mystery, Fantasy, Dangra]
+tags: [MM Romance, Mystery, Fantasy, DangRa]
+
+# --- DỮ LIỆU CHO TRANG CHỦ ---
+type: story
+author: Charlie Adhara
+cover_image: /truyen/the-wolf-at-the-door/cover.jpg
+genres: "Trinh thám, Hành động, Oan gia ngõ hẹp"
+# -----------------------------
 ---
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">
