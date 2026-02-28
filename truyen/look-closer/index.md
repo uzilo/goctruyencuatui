@@ -89,8 +89,10 @@ genres: "Thriller, Trinh thám, Bí ẩn"
                 Chương 2: Simon
             </a>
         </li>
-        <li style="padding: 10px; border-bottom: 1px solid #eee; color: #aaa;">
-            Chương 3: (Chờ đã...) 🔒
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-03" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 3: Simon
+            </a>
         </li>
     </ul>
 </div>

@@ -298,5 +298,7 @@ Tuyệt lắm, Lauren. Em thì sao?</p>
   <a href="./chap-01" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
     ← Chương 1
   </a>
-  <span style="color: #aaa; font-size: 0.9rem; font-style: italic;">Chương tiếp theo sắp ra mắt...</span>
+  <a href="./chap-03" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    Chương 3 →
+  </a>
 </nav>
