@@ -2,7 +2,7 @@
 layout: default
 title: Boyfriend Material
 nav_order: 3
-tags: [MM Romance, Comedy, HoanThanh]
+tags: [MM Romance, Comedy, DangRa]
 
 # --- DỮ LIỆU CHO TRANG CHỦ ---
 type: story
@@ -16,7 +16,7 @@ genres: "Hài hước, Fake Dating, Oan gia ngõ hẹp"
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">
   <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
-  <a href="{{ site.baseurl }}/tags/#hoan-thanh" style="text-decoration:none; color:#888;">Truyện Hoàn Thành</a> / 
+  <a href="{{ site.baseurl }}/tags/#dang-ra" style="text-decoration:none; color:#888;">Truyện Đang Ra</a> / 
   <span style="color:#159957;">Chi tiết sách</span>
 </div>
 

@@ -2,7 +2,14 @@
 layout: default
 title: The Long Game
 nav_order: 3
-tags: [MM Romance, Sport, Contemporary, Dangra]
+tags: [MM Romance, Sport, Contemporary, DangRa]
+
+# --- DỮ LIỆU CHO TRANG CHỦ ---
+type: story
+author: Rachel Reid
+cover_image: /truyen/the-long-game/cover.jpg
+genres: "Sport (Hockey), Rivals to Lovers"
+# -----------------------------
 ---
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">

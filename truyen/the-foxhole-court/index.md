@@ -2,7 +2,14 @@
 layout: default
 title: The Foxhole Court
 nav_order: 2
-tags: [MM Romance, Sport, Dangra]
+tags: [MM Romance, Sport, DangRa]
+
+# --- DỮ LIỆU CHO TRANG CHỦ ---
+type: story
+author: Nora Sakavic
+cover_image: /truyen/the-foxhole-court/cover.jpg
+genres: "Sport (Exy), Tâm lý, Dark, Action"
+# -----------------------------
 ---
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">
