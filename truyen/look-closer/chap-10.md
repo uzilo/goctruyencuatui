@@ -221,7 +221,7 @@ nav_order: 11
   <a href="./chap-09" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
     ← Chương 9
   </a>
-  <a href="./chap-11" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    Chương 11 →
+  <a href="./chap-12" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    Chương 12 →
   </a>
 </nav>
