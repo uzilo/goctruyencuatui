@@ -6,7 +6,7 @@ tags: [Thriller, Crime, Mystery, DangRa]
 
 # --- DỮ LIỆU ĐỂ TỰ ĐỘNG LÊN TOP TRANG CHỦ ---
 type: story
-last_updated: 2026-03-06 08:11
+last_updated: 2026-03-06 08:21
 author: David Ellis
 summary: "Một luật sư, một người phụ nữ bí ẩn, và một cái chết chấn động thị trấn nhỏ Grace Village. Khi nhìn gần hơn, bạn sẽ thấy không ai - kể cả chính mình - là vô tội."
 cover_image: /truyen/look-closer/cover.jpg
@@ -107,6 +107,11 @@ genres: "Thriller, Trinh thám, Bí ẩn"
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-07" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
                 Chương 7: Vicky
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-09" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 9: Simon
             </a>
         </li>
     </ul>
