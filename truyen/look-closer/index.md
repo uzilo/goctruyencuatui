@@ -105,6 +105,11 @@ genres: "Thriller, Trinh thám, Bí ẩn"
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-07" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 7: Vicky
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-08" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
                 Chương 8: Simon
             </a>
