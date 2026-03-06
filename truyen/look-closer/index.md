@@ -109,6 +109,11 @@ genres: "Thriller, Trinh thám, Bí ẩn"
                 Chương 8: Simon
             </a>
         </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-09" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 9: Simon
+            </a>
+        </li>
     </ul>
 </div>
 
