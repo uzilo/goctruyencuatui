@@ -419,7 +419,7 @@ Tuyệt lắm, Lauren. Em thì sao?</p>
 
 <p class="lang-vi">Được rồi, quyết định vậy đi. Hôm nay, tôi sẽ quên việc mình từng nhìn thấy em.</p>
 <p class="lang-en">Okay, that's that. I'm going to forget I ever saw you today.</p>
-
+</div>
 
 
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; margin-top: 3rem; border-top: 2px solid #eee;">
