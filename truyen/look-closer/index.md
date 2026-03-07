@@ -145,8 +145,8 @@ genres: "Thriller, Trinh thám, Bí ẩn"
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
-            <a href="./chap-17" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 17: Jane
+            <a href="./chap-18" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 18: Simon
             </a>
         </li>
     </ul>
