@@ -224,6 +224,21 @@ genres: "Thriller, Trinh thám, Bí ẩn"
                 Chương 31: Simon
             </a>
         </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-32" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 32: Simon
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-33" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 33: Jane
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-34" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 34: Christian
+            </a>
+        </li>
     </ul>
 </div>
 

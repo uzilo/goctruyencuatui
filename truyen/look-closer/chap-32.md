@@ -13,8 +13,8 @@ nav_order: 33
 </div>
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <h1 style="color: #2c3e50; margin-bottom: 10px; font-size: 2rem;">CHƯƠNG 32</h1>
-    <h2 style="font-size: 1.2rem; color: #7f8c8d; font-weight: normal; margin-top: 0;">Simon</h2>
+    <h1 style="color: #2c3e50; margin-bottom: 10px; font-size: 2rem;">32</h1>
+    <h2 style="font-size: 1.2rem; color: #7f8c8d; font-weight: bold; text-transform: uppercase; margin-top: 0;">SIMON</h2>
 </div>
 
 <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
