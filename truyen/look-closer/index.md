@@ -175,6 +175,36 @@ genres: "Thriller, Trinh thám, Bí ẩn"
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-22" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 22: Jane
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-23" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 23: Vicky
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-24" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 24: Vicky
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-25" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 25: Christian
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-26" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 26: Simon
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-27" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 27: Simon
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-28" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
                 Chương 28: Christian
             </a>
