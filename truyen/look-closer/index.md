@@ -145,8 +145,8 @@ genres: "Thriller, Trinh thám, Bí ẩn"
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
-            <a href="./chap-21" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 21: Simon
+            <a href="./chap-20" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 20: Simon
             </a>
         </li>
     </ul>
