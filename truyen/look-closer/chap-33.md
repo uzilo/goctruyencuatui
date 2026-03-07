@@ -7,14 +7,14 @@ nav_order: 34
 ---
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 30px;">
-  <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
-  <a href="./" style="text-decoration:none; color:#888;">Look Closer</a> / 
-  <span style="color:#8e44ad;">Chương 33</span>
+  <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
+  <a href="./" style="text-decoration:none; color:#888;">Look Closer</a> / 
+  <span style="color:#8e44ad;">Chương 33</span>
 </div>
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <h1 style="color: #2c3e50; margin-bottom: 10px; font-size: 2rem;">CHƯƠNG 33</h1>
-    <h2 style="font-size: 1.2rem; color: #7f8c8d; font-weight: normal; margin-top: 0;">Jane</h2>
+    <h1 style="color: #2c3e50; margin-bottom: 10px; font-size: 2rem;">33</h1>
+    <h2 style="font-size: 1.2rem; color: #7f8c8d; font-weight: bold; text-transform: uppercase; margin-top: 0;">JANE</h2>
 </div>
 
 <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
@@ -159,10 +159,10 @@ nav_order: 34
 </div>
 
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; margin-top: 3rem; border-top: 2px solid #eee;">
-  <a href="./chap-32" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    ← Chương 32
-  </a>
-  <a href="./chap-34" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    Chương 34 →
-  </a>
+  <a href="./chap-32" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    ← Chương 32
+  </a>
+  <a href="./chap-34" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    Chương 34 →
+  </a>
 </nav>

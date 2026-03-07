@@ -7,14 +7,14 @@ nav_order: 35
 ---
 
 <div style="font-size: 0.9rem; color: #888; margin-bottom: 30px;">
-  <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
-  <a href="./" style="text-decoration:none; color:#888;">Look Closer</a> / 
-  <span style="color:#8e44ad;">Chương 34</span>
+  <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#888;">Home</a> / 
+  <a href="./" style="text-decoration:none; color:#888;">Look Closer</a> / 
+  <span style="color:#8e44ad;">Chương 34</span>
 </div>
 
 <div style="text-align: center; margin-bottom: 40px;">
-    <h1 style="color: #2c3e50; margin-bottom: 10px; font-size: 2rem;">CHƯƠNG 34</h1>
-    <h2 style="font-size: 1.2rem; color: #7f8c8d; font-weight: normal; margin-top: 0;">Christian</h2>
+    <h1 style="color: #2c3e50; margin-bottom: 10px; font-size: 2rem;">34</h1>
+    <h2 style="font-size: 1.2rem; color: #7f8c8d; font-weight: bold; text-transform: uppercase; margin-top: 0;">CHRISTIAN</h2>
 </div>
 
 <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
@@ -33,8 +33,8 @@ nav_order: 35
 <p class="lang-vi">Điều đó khá tốt, vì nếu không thì tôi sẽ phải băn khoăn. Vicky không thuộc tuýp người hay ban phát những lời khen ngợi. Cô ấy không rên rỉ mãn nguyện sau đó và khen ngợi tôi tuyệt vời đến nhường nào, hay làm tình với tôi tuyệt hơn hẳn so với lão chồng cô ấy.</p>
 <p class="lang-en">Good thing, because otherwise I'd have to wonder. Vicky wasn't the type to offer compliments. She didn't sigh contentedly afterward and tell me how wonderful I was, or how much better I was in bed than her husband.</p>
 
-<p class="lang-vi">"Cái gì đây?" cô ấy gọi vọng ra từ phòng tắm.</p>
-<p class="lang-en">"What is this?" she called out from the bathroom.</p>
+<p class="lang-vi">"Cái gì <em>đây</em>?" cô ấy gọi vọng ra từ phòng tắm.</p>
+<p class="lang-en">"What is <em>this</em>?" she called out from the bathroom.</p>
 
 <p class="lang-vi">Ôi thôi. Tôi đã làm gì vậy? Có phải tôi đã để hớ hênh thứ gì đó mà cô ấy không nên thấy không...</p>
 <p class="lang-en">Uh-oh. What did I do? Had I left something out that she shouldn't see...</p>
@@ -57,8 +57,8 @@ nav_order: 35
 <p class="lang-vi">"Hộp đựng chỉ nha khoa," tôi nói với vẻ hơi ngượng ngùng, cứ như thể tôi cũng thấy hơi xấu hổ khi sở hữu một chiếc bàn chải đánh răng làm bằng titanium nguyên chất, màu đen nhám, có lớp phủ kháng khuẩn bảo vệ trong hốc cắm, đi kèm với kềm cắt móng tay, dao cạo điện, máy tỉa lông mũi và hộp đựng chỉ nha khoa cũng bằng titanium đồng bộ.</p>
 <p class="lang-en">"Dental floss holder," I said with appropriate sheepishness, as if I were slightly embarrassed about owning a solid matte-black titanium toothbrush with an antimicrobial protective coating in its charging dock, along with matching titanium nail clippers, an electric razor, a nose-hair trimmer, and a titanium dental floss holder.</p>
 
-<p class="lang-vi">"Cái này tốn bao nhiêu tiền vậy, Christian?"</p>
-<p class="lang-en">"How much did this cost, Christian?"</p>
+<p class="lang-vi">"Cái này tốn bao nhiêu <em>tiền</em> vậy, Christian?"</p>
+<p class="lang-en">"How much did this <em>cost</em>, Christian?"</p>
 
 <p class="lang-vi">Giá trị thị trường của nó là hơn 8.500 đô la, tôi mới biết được sau khi tự tìm hiểu. Thực ra đó là một món quà — từ một trong những con mồi của tôi, Số 4 ở Santa Fe — trước khi cô ta nhận ra mình là con mồi.</p>
 <p class="lang-en">Its retail value was upward of $8,500, I'd learned after doing my own research. It was actually a gift—from one of my marks, Number Four in Santa Fe—before she realized she was a mark.</p>
@@ -81,7 +81,7 @@ nav_order: 35
 <p class="lang-vi">Cô ấy muốn tôi thêm lần nữa. Lần này, chúng tôi sẽ lên giường.</p>
 <p class="lang-en">She wanted me again. This time, we'd use the bed.</p>
 
-<p class="lang-vi" style="text-align:center;">•  •  •</p>
+<p style="text-align:center; margin: 20px 0; color: #888;">• &nbsp;• &nbsp;•</p>
 
 <p class="lang-vi">Sau đó, Vicky đưa mắt nhìn quanh căn hộ của tôi, chìm đắm trong suy nghĩ.</p>
 <p class="lang-en">Afterward, Vicky looked around my apartment, lost in thought.</p>
@@ -146,7 +146,7 @@ nav_order: 35
 <p class="lang-vi">"Tôi sẽ không ở lại Chicago," cô ấy nói. "Bất cứ nơi nào cũng được, trừ Chicago."</p>
 <p class="lang-en">"I won't stay in Chicago," she said. "Anywhere but Chicago."</p>
 
-<p class="lang-vi" style="text-align:center;">•  •  •</p>
+<p style="text-align:center; margin: 20px 0; color: #888;">• &nbsp;• &nbsp;•</p>
 
 <p class="lang-vi">"Để anh đưa em đi ăn tối nhé," tôi nói.</p>
 <p class="lang-en">"Let me take you to dinner," I said.</p>
@@ -211,8 +211,8 @@ nav_order: 35
 </div>
 
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; margin-top: 3rem; border-top: 2px solid #eee;">
-  <a href="./chap-33" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    ← Chương 33
-  </a>
-  <span style="color: #aaa; font-size: 0.9rem; font-style: italic;">Chương tiếp theo sắp ra mắt...</span>
+  <a href="./chap-33" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    ← Chương 33
+  </a>
+  <span style="color: #aaa; font-size: 0.9rem; font-style: italic;">Chương tiếp theo sắp ra mắt...</span>
 </nav>
