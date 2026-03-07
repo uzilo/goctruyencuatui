@@ -175,8 +175,8 @@ genres: "Thriller, Trinh thám, Bí ẩn"
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
-            <a href="./chap-24" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
-                Chương 24: Vicky
+            <a href="./chap-25" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 25: Christian
             </a>
         </li>
     </ul>
