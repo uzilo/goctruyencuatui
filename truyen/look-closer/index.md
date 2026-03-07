@@ -145,8 +145,33 @@ genres: "Thriller, Trinh thám, Bí ẩn"
             </a>
         </li>
         <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-16" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 16: Simon
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-17" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 17: Jane
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-18" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 18: Simon
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
             <a href="./chap-19" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
                 Chương 19: Vicky
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-20" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 20: Simon
+            </a>
+        </li>
+        <li style="padding: 10px; border-bottom: 1px solid #eee;">
+            <a href="./chap-21" style="text-decoration: none; color: #333; font-weight: bold; display: block;">
+                Chương 21: Simon
             </a>
         </li>
     </ul>
