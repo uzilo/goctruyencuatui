@@ -58,8 +58,8 @@ nav_order: 29
 </div>
 
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; margin-top: 3rem; border-top: 2px solid #eee;">
-  <a href="./chap-21" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
-    ← Chương 21
+  <a href="./chap-27" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    ← Chương 27
   </a>
   <span style="color: #aaa; font-size: 0.9rem; font-style: italic;">Chương tiếp theo sắp ra mắt...</span>
 </nav>
