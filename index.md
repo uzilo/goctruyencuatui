@@ -161,6 +161,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="card-tag" style="background: #e8f8f5; color: #27ae60;">Rom-Com, Hoàng gia, Enemies to lovers</span>
             </div>
         </a>
+
+        <a href="./truyen/My-Best-Friend's-Brother-Is-Hung-Like-A Horse/" class="book-card">
+            <div class="card-status completed">Hoàn thành</div>
+            <img src="./truyen/My-Best-Friend's-Brother-Is-Hung-Like-A Horse/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/e74c3c/white?text=My+Best+Friend'">
+            <div class="card-body">
+                <h3 class="card-title" style="color: #e74c3c;">My Best Friend's Brother Is Hung Like A Horse</h3>
+                <div class="card-author">Tác giả: Anonymous</div>
+                <div class="card-desc" style="font-size: 0.9rem; color: #666; margin-bottom: 15px; flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                    Bạn của tôi chỉ nói về người anh trai vạm vỡ của họ, nhưng họ không nói về cái này. Một chuyện tình mùa hè 'trần trụi' đến mức nó sẽ thiêu đốt mọi rào cản.
+                </div>
+                <span class="card-tag" style="background: #fdf2e9; color: #e74c3c;">Erotica, Romance, BL</span>
+            </div>
+        </a>
     </div>
 </div>
 

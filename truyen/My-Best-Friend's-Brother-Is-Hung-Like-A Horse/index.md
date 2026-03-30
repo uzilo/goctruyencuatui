@@ -2,7 +2,7 @@
 layout: default
 title: My Best Friend's Brother Is Hung Like A Horse
 nav_order: 15
-tags: [Erotica, Romance, BL, DangRa]
+tags: [Erotica, Romance, BL, HoanThanh]
 
 # --- DỮ LIỆU ĐỂ TỰ ĐỘNG LÊN TOP TRANG CHỦ ---
 type: story
