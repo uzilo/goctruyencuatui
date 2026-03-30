@@ -311,5 +311,7 @@ nav_order: 4
   <a href="./chap-2" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
     ← Chương 2
   </a>
-  <div></div>
+  <a href="./chap-4" style="text-decoration: none; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; font-weight: 600; transition: transform 0.2s;">
+    Chương 4 →
+  </a>
 </nav>

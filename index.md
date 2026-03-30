@@ -162,16 +162,29 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </a>
 
+        <a href="./truyen/Seducing-My-Homophobic-Friends/" class="book-card">
+            <div class="card-status completed">Hoàn thành</div>
+            <img src="./truyen/Seducing-My-Homophobic-Friends/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/e65100/white?text=Seducing+My+Homophobic+Friends'">
+            <div class="card-body">
+                <h3 class="card-title" style="color: #e65100;">Seducing My Homophobic Friends</h3>
+                <div class="card-author">Chiến Dịch Quyến Rũ</div>
+                <div class="card-desc" style="font-size: 0.9rem; color: #666; margin-bottom: 15px; flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                    Carter sắp xách đít dọn đi nơi khác, nhưng trước khi lượn, chả quyết định chơi một cú "tất tay" để đời: Vạch quần bằng hết hội bạn thân 6 đứa đực rựa của mình.
+                </div>
+                <span class="card-tag" style="background: #fff3e0; color: #e65100;">18+ Cực Mạnh, Bisexual Awakening, Slang</span>
+            </div>
+        </a>
+
         <a href="./truyen/My-Best-Friend's-Brother-Is-Hung-Like-A Horse/" class="book-card">
             <div class="card-status completed">Hoàn thành</div>
-            <img src="./truyen/My-Best-Friend's-Brother-Is-Hung-Like-A Horse/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/e74c3c/white?text=My+Best+Friend'">
+            <img src="./truyen/My-Best-Friend's-Brother-Is-Hung-Like-A Horse/cover.jpg" alt="Cover" class="card-cover" loading="lazy" onerror="this.src='https://placehold.co/200x300/e65100/white?text=My+Best+Friend\'s+Brother'">
             <div class="card-body">
-                <h3 class="card-title" style="color: #e74c3c;">My Best Friend's Brother Is Hung Like A Horse</h3>
-                <div class="card-author">Tác giả: Anonymous</div>
+                <h3 class="card-title" style="color: #e65100;">Anh Trai Bạn Thân "Khủng" Như Ngựa</h3>
+                <div class="card-author">Tình Khúc Mùa Hè</div>
                 <div class="card-desc" style="font-size: 0.9rem; color: #666; margin-bottom: 15px; flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
                     Bạn của tôi chỉ nói về người anh trai vạm vỡ của họ, nhưng họ không nói về cái này. Một chuyện tình mùa hè 'trần trụi' đến mức nó sẽ thiêu đốt mọi rào cản.
                 </div>
-                <span class="card-tag" style="background: #fdf2e9; color: #e74c3c;">Erotica, Romance, BL</span>
+                <span class="card-tag" style="background: #fff3e0; color: #e65100;">18+ Cực Mạnh, Tình cảm</span>
             </div>
         </a>
     </div>
